@@ -1,0 +1,449 @@
+Entry: LowDiscrepancy
+Aliases: LowDiscrepancy runif.halton rnorm.halton runif.sobol rnorm.sobol runif.pseudo rnorm.pseudo
+Keywords: programming
+Description: Low Discrepancy Sequences
+URL: ../../../library/GLDEX/html/085A-LowDiscrepancy.html
+
+Entry:  FMKL fitting and basic functions 
+Aliases: fun.auto.mm.fmkl fun.fmkl.mm.min fun.fmkl.mm.sol.alt fun.fmkl.mm.sol fun.fmkl.sol fun.fmkl.nr fun.fmkl fun.fmkla fun.fmklb fun.fmkl0 fun.fmkl.L30 fun.fmkl.L40 fun.Lm.gt.2.fmkl fun.moments
+Keywords: internal
+Description: This is a collection of functions designed to find the initial values under the method of moments for FMKL generalised lambda distribution. It also includes basic FMKL GLD functions.
+URL: ../../../library/GLDEX/html/FMKLfittingandbasicfunctions.html
+
+Entry: GLDEX-package
+Aliases: GLDEX-package GLDEX
+Keywords: distribution smooth
+Description: This package fits RS and FMKL generalised lambda distributions using various methods. It also provides functions for fitting bimodal distributions using mixtures of generalised lambda distributions.
+URL: ../../../library/GLDEX/html/GLDEX.package.html
+
+Entry: GLD functions
+Aliases: dgl pgl qdgl qgl rgl
+Keywords: distribution
+Description: The Generalised Lambda Distribution Family
+URL: ../../../library/GLDEX/html/GLDfunctions.html
+
+Entry: Lmoments
+Aliases: Lmoments Lcoefs Lmomcov Lmoments_calc Lmomcov_calc
+Keywords: robust univar
+Description: L-moments
+URL: ../../../library/GLDEX/html/Lmoments.html
+
+Entry: QUnif
+Aliases: QUnif sHalton
+Keywords: math multivariate datagen
+Description: Quasi Randum Numbers via Halton Sequences
+URL: ../../../library/GLDEX/html/QUnif.html
+
+Entry:  RS fitting and basic functions 
+Aliases: fun.auto.perc.rs fun.lambda.percentile fun.percentile fun.rs.nr fun.rs.perc.gradient fun.rs.perc.min fun.rs.perc.sol.alt fun.rs.perc.sol fun.rsb fun.Lm.gt.2.rs
+Keywords: internal
+Description: This is a collection of functions designed to find the initial values of method of moments for RS generalised lambda distribution. It also includes basic RS GLD functions.
+URL: ../../../library/GLDEX/html/RSfittingandbasicfunctions.html
+
+Entry: cut.default
+Aliases: cut.default
+Keywords: manip
+Description: A slightly modified cut function for this package
+URL: ../../../library/GLDEX/html/cut.default.html
+
+Entry: digitsBase
+Aliases: digitsBase
+Keywords: arith utilities
+Description: Digit/Bit Representation of Integers in any Base
+URL: ../../../library/GLDEX/html/digitsBase.html
+
+Entry:  Fitting functions 
+Aliases: fun.fit.gl.v2a.nw fun.fit.gl.v2a fun.fit.gl.v2b.nw fun.fit.gl.v2b fun.fit.gl.v3 fun.fit.gl.v3a fun.fit.gl.v4 fun.fit.gl.v4a fun.fit.gl.v6 fun.fit.gl.v6a fun.fit.gl.v.lm fun.fit.gl.v.lma
+Keywords: internal
+Description: This is a collection of functions designed to implement the fitting algorithms for all the methods covered in this package.
+URL: ../../../library/GLDEX/html/fittingfunctions.html
+
+Entry: fun.RMFMKL.hs
+Aliases: fun.RMFMKL.hs
+Keywords: smooth
+Description: Fit FMKL generalised distribution to data using discretised approach with weights.
+URL: ../../../library/GLDEX/html/fun.RMFMKL.hs.html
+
+Entry: fun.RMFMKL.hs.nw
+Aliases: fun.RMFMKL.hs.nw
+Keywords: smooth
+Description: Fit FMKL generalised distribution to data using discretised approach without weights.
+URL: ../../../library/GLDEX/html/fun.RMFMKL.hs.nw.html
+
+Entry: fun.RMFMKL.lm
+Aliases: fun.RMFMKL.lm
+Keywords: smooth
+Description: Fit FMKL generalised lambda distribution to data set using L moment matching
+URL: ../../../library/GLDEX/html/fun.RMFMKL.lm.html
+
+Entry: fun.RMFMKL.ml
+Aliases: fun.RMFMKL.ml
+Keywords: smooth
+Description: Fit FMKL generalised lambda distribution to data set using maximum likelihood estimation
+URL: ../../../library/GLDEX/html/fun.RMFMKL.ml.html
+
+Entry: fun.RMFMKL.mm
+Aliases: fun.RMFMKL.mm
+Keywords: smooth
+Description: Fit FMKL generalised lambda distribution to data set using moment matching
+URL: ../../../library/GLDEX/html/fun.RMFMKL.mm.html
+
+Entry: fun.RMFMKL.qs
+Aliases: fun.RMFMKL.qs
+Keywords: smooth
+Description: Fit FMKL generalised lambda distribution to data set using quantile matching
+URL: ../../../library/GLDEX/html/fun.RMFMKL.qs.html
+
+Entry: fun.RPRS.hs
+Aliases: fun.RPRS.hs
+Keywords: smooth
+Description: Fit RS generalised distribution to data using discretised approach with weights.
+URL: ../../../library/GLDEX/html/fun.RPRS.hs.html
+
+Entry: fun.RPRS.hs.nw
+Aliases: fun.RPRS.hs.nw
+Keywords: smooth
+Description: Fit RS generalised distribution to data using discretised approach without weights.
+URL: ../../../library/GLDEX/html/fun.RPRS.hs.nw.html
+
+Entry: fun.RPRS.lm
+Aliases: fun.RPRS.lm
+Keywords: smooth
+Description: Fit RS generalised lambda distribution to data set using L moment matching
+URL: ../../../library/GLDEX/html/fun.RPRS.lm.html
+
+Entry: fun.RPRS.ml
+Aliases: fun.RPRS.ml
+Keywords: smooth
+Description: Fit RS generalised lambda distribution to data set using maximum likelihood estimation
+URL: ../../../library/GLDEX/html/fun.RPRS.ml.html
+
+Entry: fun.RPRS.mm
+Aliases: fun.RPRS.mm
+Keywords: smooth
+Description: Fit RS generalised lambda distribution to data set using moment matching
+URL: ../../../library/GLDEX/html/fun.RPRS.mm.html
+
+Entry: fun.RPRS.qs
+Aliases: fun.RPRS.qs
+Keywords: smooth
+Description: Fit RS generalised lambda distribution to data set using quantile matching
+URL: ../../../library/GLDEX/html/fun.RPRS.qs.html
+
+Entry: fun.auto.bimodal.ml
+Aliases: fun.auto.bimodal.ml
+Keywords: smooth
+Description: Fitting mixture of generalied lambda distribtions to data using maximum likelihood estimation via the EM algorithm
+URL: ../../../library/GLDEX/html/fun.auto.bimodal.ml.html
+
+Entry: fun.auto.bimodal.pml
+Aliases: fun.auto.bimodal.pml
+Keywords: smooth
+Description: Fitting mixture of generalied lambda distribtions to data using parition maximum likelihood estimation
+URL: ../../../library/GLDEX/html/fun.auto.bimodal.pml.html
+
+Entry: fun.auto.bimodal.qs
+Aliases: fun.auto.bimodal.qs
+Keywords: smooth
+Description: Fitting mixtures of generalied lambda distribtions to data using quantile matching method
+URL: ../../../library/GLDEX/html/fun.auto.bimodal.qs.html
+
+Entry: fun.beta
+Aliases: fun.beta fun.beta1
+Keywords: internal
+Description: This is a collection of functions used in the calculation of the beta function.
+URL: ../../../library/GLDEX/html/fun.beta.html
+
+Entry: fun.bimodal.fit.ml
+Aliases: fun.bimodal.fit.ml
+Keywords: smooth
+Description: Finds the final fits using the maximum likelihood estimation for the bimodal dataset.
+URL: ../../../library/GLDEX/html/fun.bimodal.fit.ml.html
+
+Entry: fun.bimodal.fit.pml
+Aliases: fun.bimodal.fit.pml
+Keywords: smooth
+Description: Finds the final fits using partition maximum likelihood estimation for the bimodal dataset.
+URL: ../../../library/GLDEX/html/fun.bimodal.fit.pml.html
+
+Entry: fun.bimodal.init
+Aliases: fun.bimodal.init
+Keywords: smooth
+Description: Finds the initial values for optimisation in fitting the bimodal generalised lambda distribution.
+URL: ../../../library/GLDEX/html/fun.bimodal.init.html
+
+Entry: fun.class.regime.bi
+Aliases: fun.class.regime.bi
+Keywords: cluster
+Description: Classifies data into two groups using a clustering regime.
+URL: ../../../library/GLDEX/html/fun.class.regime.bi.html
+
+Entry: fun.comp.moments.ml.2
+Aliases: fun.comp.moments.ml.2
+Keywords: univar
+Description: Compare the moments of the data and the fitted univariate generalised lambda distribution. Specialised funtion designed for RMFMKL.ML and STAR methods.
+URL: ../../../library/GLDEX/html/fun.comp.moments.ml.2.html
+
+Entry: fun.comp.moments.ml
+Aliases: fun.comp.moments.ml
+Keywords: univar
+Description: Compare the moments of the data and the fitted univariate generalised lambda distribution.
+URL: ../../../library/GLDEX/html/fun.comp.moments.ml.html
+
+Entry: fun.data.fit.hs
+Aliases: fun.data.fit.hs
+Keywords: smooth
+Description: Fit RS and FMKL generalised distributions to data using discretised approach with weights.
+URL: ../../../library/GLDEX/html/fun.data.fit.hs.html
+
+Entry: fun.data.fit.hs.nw
+Aliases: fun.data.fit.hs.nw
+Keywords: smooth
+Description: Fit RS and FMKL generalised distributions to data using discretised approach without weights.
+URL: ../../../library/GLDEX/html/fun.data.fit.hs.nw.html
+
+Entry: fun.data.fit.lm
+Aliases: fun.data.fit.lm
+Keywords: 
+Description: Fit data using L moment matching estimation for RS and FMKL GLD
+URL: ../../../library/GLDEX/html/fun.data.fit.lm.html
+
+Entry: fun.data.fit.ml
+Aliases: fun.data.fit.ml
+Keywords: smooth
+Description: Fit data using RS, FMKL maximum likelihood estimation and the FMKL starship method.
+URL: ../../../library/GLDEX/html/fun.data.fit.ml.html
+
+Entry: fun.data.fit.mm
+Aliases: fun.data.fit.mm
+Keywords: 
+Description: Fit data using moment matching estimation for RS and FMKL GLD
+URL: ../../../library/GLDEX/html/fun.data.fit.mm.html
+
+Entry: fun.data.fit.qs
+Aliases: fun.data.fit.qs
+Keywords: smooth
+Description: Fit data using quantile matching estimation for RS and FMKL GLD
+URL: ../../../library/GLDEX/html/fun.data.fit.qs.html
+
+Entry: fun.diag.ks.g
+Aliases: fun.diag.ks.g
+Keywords: htest
+Description: Compute the simulated Kolmogorov-Smirnov tests for the unimodal dataset
+URL: ../../../library/GLDEX/html/fun.diag.ks.g.html
+
+Entry: fun.diag.ks.g.bimodal
+Aliases: fun.diag.ks.g.bimodal
+Keywords: htest
+Description: Compute the simulated Kolmogorov-Smirnov tests for the bimodal dataset
+URL: ../../../library/GLDEX/html/fun.diag.ks.g.bimodal.html
+
+Entry: fun.diag1
+Aliases: fun.diag1
+Keywords: htest
+Description: Diagnostic function for theoretical distribution fits through the resample Kolmogorov-Smirnoff tests
+URL: ../../../library/GLDEX/html/fun.diag1.html
+
+Entry: fun.diag2
+Aliases: fun.diag2
+Keywords: htest
+Description: Diagnostic function for empirical data distribution fits through the resample Kolmogorov-Smirnoff tests
+URL: ../../../library/GLDEX/html/fun.diag2.html
+
+Entry: fun.disc.estimation
+Aliases: fun.disc.estimation
+Keywords: univar
+Description: Estimates the mean and variance after cutting up a vector of variable into evenly spaced categories.
+URL: ../../../library/GLDEX/html/fun.disc.estimation.html
+
+Entry: fun.gen.qrn
+Aliases: fun.gen.qrn
+Keywords: datagen
+Description: Finds the low discrepancy quasi random numbers
+URL: ../../../library/GLDEX/html/fun.gen.qrn.html
+
+Entry: fun.lm.theo.gld
+Aliases: fun.lm.theo.gld
+Keywords: univar
+Description: Find the theoretical first four L moments of the generalised lambda distribution.
+URL: ../../../library/GLDEX/html/fun.lm.theo.gld.html
+
+Entry: fun.mApply
+Aliases: fun.mApply
+Keywords: manip
+Description: Applying functions based on an index for a matrix.
+URL: ../../../library/GLDEX/html/fun.mApply.html
+
+Entry: fun.moments.bimodal
+Aliases: fun.moments.bimodal
+Keywords: univar
+Description: Finds the moments of fitted mixture of generalised lambda distribution by simulation.
+URL: ../../../library/GLDEX/html/fun.moments.bimodal.html
+
+Entry: fun.moments.r
+Aliases: fun.moments.r
+Keywords: univar
+Description: Calculate mean, variance, skewness and kurtosis of a numerical vector
+URL: ../../../library/GLDEX/html/fun.moments.r.html
+
+Entry: fun.nclass.e
+Aliases: fun.nclass.e
+Keywords: univar
+Description: Estimates the number of classes or bins to smooth over in the discretised method of fitting generalised lambda distribution to data.
+URL: ../../../library/GLDEX/html/fun.nclass.e.html
+
+Entry: fun.plot.fit
+Aliases: fun.plot.fit
+Keywords: hplot
+Description: Plotting the univariate generalised lambda distribution fits on the data set.
+URL: ../../../library/GLDEX/html/fun.plot.fit.html
+
+Entry: fun.plot.fit.bm
+Aliases: fun.plot.fit.bm
+Keywords: hplot
+Description: Plotting mixture of two generalised lambda distributions on the data set.
+URL: ../../../library/GLDEX/html/fun.plot.fit.bm.html
+
+Entry: fun.plot.many.gld
+Aliases: fun.plot.many.gld
+Keywords: hplot
+Description: Plotting many univariate generalised lambda distributions on one page.
+URL: ../../../library/GLDEX/html/fun.plot.many.gld.html
+
+Entry: fun.rawmoments
+Aliases: fun.rawmoments
+Keywords: univar
+Description: Computes the raw moments of the generalised lambda distribution up to 4th order.
+URL: ../../../library/GLDEX/html/fun.rawmoments.html
+
+Entry: fun.simu.bimodal
+Aliases: fun.simu.bimodal
+Keywords: datagen
+Description: Simulate a mixture of two generalised lambda distributions.
+URL: ../../../library/GLDEX/html/fun.simu.bimodal.html
+
+Entry: fun.theo.bi.mv.gld
+Aliases: fun.theo.bi.mv.gld
+Keywords: univar
+Description: Calculates the theoretical mean, variance, skewness and kurtosis for mixture of two generalised lambda distributions.
+URL: ../../../library/GLDEX/html/fun.theo.bi.mv.gld.html
+
+Entry: fun.theo.mv.gld
+Aliases: fun.theo.mv.gld
+Keywords: univar
+Description: Find the theoretical first four moments of the generalised lambda distribution.
+URL: ../../../library/GLDEX/html/fun.theo.mv.gld.html
+
+Entry: fun.which.zero
+Aliases: fun.which.zero
+Keywords: manip
+Description: Determine which values are zero.
+URL: ../../../library/GLDEX/html/fun.which.zero.html
+
+Entry: fun.zero.omit
+Aliases: fun.zero.omit
+Keywords: manip
+Description: Returns a vector after removing all the zeros.
+URL: ../../../library/GLDEX/html/fun.zero.omit.html
+
+Entry: gl.check.lambda.alt
+Aliases: gl.check.lambda.alt
+Keywords: distribution
+Description: Checks whether the parameters provided constitute a valid generalised lambda distribution.
+URL: ../../../library/GLDEX/html/gl.check.lambda.alt.html
+
+Entry: gl.check.lambda.alt1
+Aliases: gl.check.lambda.alt1
+Keywords: distribution
+Description: Checks whether the parameters provided constitute a valid generalised lambda distribution.
+URL: ../../../library/GLDEX/html/gl.check.lambda.alt1.html
+
+Entry:  Hidden basic functions 
+Aliases: .gl.parameter.tidy .qdgl.fmkl .qdgl.rs .qgl.rs .qgl.fmkl .qgl.fmkl
+Keywords: internal
+Description: This is a collection of functions designed to implement the basic RS GLD functions.
+URL: ../../../library/GLDEX/html/hiddenfunctions.html
+
+Entry: hist.su
+Aliases: hist.su
+Keywords: hplot
+Description: Histogram with exact number of bins specified by the user
+URL: ../../../library/GLDEX/html/hist.su.html
+
+Entry: is.inf
+Aliases: is.inf
+Keywords: manip
+Description: Returns a logical vecto, TRUE if the value is Inf or -Inf.
+URL: ../../../library/GLDEX/html/is.inf.html
+
+Entry: is.notinf
+Aliases: is.notinf
+Keywords: manip
+Description: Returns a logical vector TRUE, if the value is not Inf or -Inf.
+URL: ../../../library/GLDEX/html/is.notinf.html
+
+Entry: ks.gof
+Aliases: ks.gof
+Keywords: htest
+Description: Kolmogorov-Smirnov test
+URL: ../../../library/GLDEX/html/ks.gof.html
+
+Entry: Optimisation functions
+Aliases: optim.fun2.nw optim.fun2 optim.fun3 optim.fun4 optim.fun5 optim.fun6 optim.fun7 optim.fun.lm optim.fun.qs optim.fun.bi.final
+Keywords: internal
+Description: This is a collection of functions used in the optimisation processes for all the fitting methods covered in this package.
+URL: ../../../library/GLDEX/html/optimisationfunctions.html
+
+Entry: pretty.su
+Aliases: pretty.su
+Keywords: manip
+Description: An alternative to the normal pretty function in R.
+URL: ../../../library/GLDEX/html/pretty.su.html
+
+Entry: qqplot.gld
+Aliases: qqplot.gld
+Keywords: hplot
+Description: Do a quantile plot on the univariate distribution fits.
+URL: ../../../library/GLDEX/html/qqplot.gld.html
+
+Entry: qqplot.gld.bi
+Aliases: qqplot.gld.bi
+Keywords: hplot
+Description: Do a quantile plot on the bimodal distribution fits.
+URL: ../../../library/GLDEX/html/qqplot.gld.bi.html
+
+Entry: skewness and kurtosis
+Aliases: skewness kurtosis
+Keywords: univar
+Description: Compute skewness and kurtosis statistics
+URL: ../../../library/GLDEX/html/skewnessandkurtosis.html
+
+Entry: starship
+Aliases: starship
+Keywords: distribution
+Description: Carry out the "starship" estimation method for the generalised lambda distribution
+URL: ../../../library/GLDEX/html/starship.html
+
+Entry: starship.adaptivegrid
+Aliases: starship.adaptivegrid
+Keywords: distribution
+Description: Carry out the "starship" estimation method for the generalised lambda distribution using a grid-based search
+URL: ../../../library/GLDEX/html/starship.adaptivegrid.html
+
+Entry: starship.obj
+Aliases: starship.obj
+Keywords: distribution
+Description: Objective function that is minimised in starship estimation method
+URL: ../../../library/GLDEX/html/starship.obj.html
+
+Entry: t1lmoments
+Aliases: t1lmoments
+Keywords: robust univar
+Description: Trimmed L-moments
+URL: ../../../library/GLDEX/html/t1lmoments.html
+
+Entry: which.na
+Aliases: which.na
+Keywords: manip
+Description: Determine Which Values are Missing Values
+URL: ../../../library/GLDEX/html/which.na.html
