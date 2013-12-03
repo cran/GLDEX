@@ -14,8 +14,6 @@
 #  A copy of the GNU General Public License is available at
 #  http://www.r-project.org/Licenses/
 
-#  Copyright (C) 1995-2012 The R Core Team
-
 #  This function was written by R Core Team and modified by Steve Su
 
 "histsu" <-

@@ -1,5 +1,4 @@
-8e041cef9b2dda7c1dc60f1def8bdbac *CONTENTS
-7e9d7d13677382ac52734da678c83b95 *DESCRIPTION
+06d76987991bc5486e4bc3b1c00e2723 *DESCRIPTION
 18c6f444d41a86457f4fb8652738a96f *NAMESPACE
 09eed6c83482104589e6f1e55e068d1b *R/085A-LowDiscrepancy.R
 fe887e74c8390e48cfa3000300fff07c *R/Lmoments.R
@@ -93,8 +92,8 @@ a38a3d827ff007ac4d63d3a6ebf2e450 *R/fun.which.zero.R
 d0be9a304c3f171f0899479d2ba6677c *R/fun.zero.omit.R
 0faf7d0f49d4906496c8bcf7bacd0dc9 *R/gl.check.lambda.alt.R
 be537b6d7e921536e83a8792de0172b2 *R/gl.check.lambda.alt1.R
-10a12aeae40f1cc427ae7e4f3feab073 *R/hiddenfunctions.R
-10521ceabb1b3d0c58829401b706fbc2 *R/histsu.R
+3eb3ce54c2a1696fbfbe2fd0b534735d *R/hiddenfunctions.R
+b873dd63493230a9430a14dc9dad11ee *R/histsu.R
 6864c8bc5729131f2d352e6ec117352a *R/is.inf.R
 133588c5e227b3b6f842c50c3c5e2e28 *R/is.notinf.R
 c6606b213b467ecadd5c7917edbdd337 *R/ks.gof.R
@@ -124,7 +123,7 @@ b298503ddbee43d26157c1ab439ff088 *R/t1lmoments.R
 23161c7eb305fec411df18388de0d35c *README
 64d2624c52721971d15ae22a0801ca0a *man/085A-LowDiscrepancy.Rd
 e2ab99700280602c30befe497e248b22 *man/FMKLfittingandbasicfunctions.Rd
-be3cf43a36e4722a54c00c7018516e90 *man/GLDEX.package.Rd
+c3ff3cf7fb6144ec946c0844001f814a *man/GLDEX.package.Rd
 b86ecfd94a761e09e7480f92b863b43c *man/GLDfunctions.Rd
 b53d6848c2896f429f6fa835816877bc *man/Lmoments.Rd
 ef673486fcaa278af60c4a17cfa532a9 *man/QUnif.Rd
@@ -191,9 +190,9 @@ fd7047080f86cb4c6f5a1f8bd8f5199a *man/is.notinf.Rd
 d73f54782119994d02a14b360d6b44d2 *man/qqplot.gld.Rd
 3430677ed97182a8751a2b4836354e25 *man/qqplot.gld.bi.Rd
 3c302ed41b6af2577afc99e30669881e *man/skewnessandkurtosis.Rd
-73c3aaf23147c57b84bfa7eb895c3a16 *man/starship.Rd
-e350a663b925ed22d770bcd96c6da93f *man/starship.adaptivegrid.Rd
-2c579dcc1809432c23ace85388eff118 *man/starship.obj.Rd
+20e51f7f311d05d3acde880a78ee5b1f *man/starship.Rd
+ab79ee449f5acaaf75d41eadb68268fb *man/starship.adaptivegrid.Rd
+99646e51da6c76dd5f4d6c9a6d1fec38 *man/starship.obj.Rd
 72484bd5531633f337c9ea1a713f17c7 *man/t1lmoments.Rd
 0640361ca908854308dd00cc2461ccc4 *man/which.na.Rd
 ac2f961e99b1c81e181152e51a224768 *src/085A-LowDiscrepancy.f

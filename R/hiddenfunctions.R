@@ -87,16 +87,11 @@ function (p, lambdas)
     result
 }
 
-.First.lib <- function(lib, pkg) {
-       library.dynam("GLDEX", pkg, lib)
-    .setGLDEXEnv(.runif.halton.seed = list())
+       
+.First<-function() { .setGLDEXEnv(.runif.halton.seed = list())
     .setGLDEXEnv(.rnorm.halton.seed = list())
     .setGLDEXEnv(.runif.sobol.seed = list())
-    .setGLDEXEnv(.rnorm.sobol.seed = list())
-
-       }
-       
-.First<-function() {library(cluster)}
+    .setGLDEXEnv(.rnorm.sobol.seed = list())}
 
 .GLDEXEnv <- new.env(hash = TRUE)
 

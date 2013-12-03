@@ -73,7 +73,7 @@ Darren Wraith, \email{Darren.Wraith@studentmail.newcastle.edu.au}}
 \code{\link{starship.adaptivegrid}}, 
 }
 \examples{
-data <- rgl(100,0,1,.2,.2)
-starship.obj(c(0,1,.2,.2),data,"fmkl")
+# data <- rgl(100,0,1,.2,.2)
+# starship.obj(c(0,1,.2,.2),data,"fmkl")
 }
 \keyword{distribution}

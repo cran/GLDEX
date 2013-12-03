@@ -93,7 +93,7 @@ Darren Wraith, \email{Darren.Wraith@studentmail.newcastle.edu.au}}
 \code{\link{starship.obj}} 
 }
 \examples{
-data <- rgl(100,0,1,.2,.2)
-starship.adaptivegrid(data,list(lcvect=(0:4)/10,ldvect=(0:4)/10))
-}
+# data <- rgl(100,0,1,.2,.2)
+# starship.adaptivegrid(data,list(lcvect=(0:4)/10,ldvect=(0:4)/10))
+# }
 \keyword{distribution}
