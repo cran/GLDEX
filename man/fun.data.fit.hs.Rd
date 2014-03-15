@@ -27,7 +27,8 @@ no.c.fmkl = 50,FUN="runif.sobol", no=10000)
   \code{\link{runif.halton}} or \code{\link{QUnif}}. }
   \item{fmkl.leap}{ Scrambling (0,1,2,3) for the Sobol sequence for the FMKL 
   distribution fit. See scrambling argument for See scrambling/leap argument for 
-  \code{\link{runif.sobol}}, \code{\link{runif.halton}} or \code{\link{QUnif}}. }
+  \code{\link{runif.sobol}}, \code{\link{runif.halton}} or \code{\link{QUnif}}. 
+  }
   \item{rs.init}{ Initial values for RS distribution optimization, 
   \code{c(-1.5,1.5)} tends to work well. }
   \item{fmkl.init}{ Initial values for FMKL distribution optimization,

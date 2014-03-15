@@ -32,7 +32,8 @@ full data set has been classified into \code{data.a} and \code{data.b} by the
 \value{
  
   \item{data.a}{ First group of data obtained by the classification algorithm. }
-  \item{data.b}{ Second group of data obtained by the classification algorithm. }
+  \item{data.b}{ Second group of data obtained by the classification algorithm. 
+  }
 }
 \references{ 
 Kaufman, L. and Rousseeuw, P. J. (1990). Finding Groups in Data: An Introduction 

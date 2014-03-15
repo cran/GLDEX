@@ -38,7 +38,8 @@ function can fail if there are no defined percentiles from the data set or if
 the initial values do not lead to a valid FMKL generalised lambda distribution.
 }
 \value{
-A vector representing four parametefmkl of the FMKL generalised lambda distribution.
+A vector representing four parametefmkl of the FMKL generalised lambda 
+distribution.
 }
 \references{ 
 Su (2008). Fitting GLD to data via quantile matching method. (Book chapter to

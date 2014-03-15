@@ -52,7 +52,7 @@ Carlo simulation. Each row represents a simulation run.
 # fun.moments.bimodal(fit1$par[1:4],fit1$par[5:8],prop1=fit1$par[9],
 # param1="fmkl",param2="fmkl")
 
-## It is also possible to compare this with the moments of the original data set:
+## It is also possible to compare this with the moments of the original dataset:
 # fun.moments(faithful[,1])
 }
 \keyword{univar}

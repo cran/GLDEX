@@ -16,7 +16,7 @@ fun.lm.theo.gld(L1, L2, L3, L4, param)
   \item{L2}{ Lambda 2. }
   \item{L3}{ Lambda 3. }
   \item{L4}{ Lambda 4. }
-  \item{param}{ \code{rs} or \code{fmkl} distribution. }
+  \item{param}{ "rs" or "fmkl" or "fkml" }
 }
 \value{
 A vector listing the first four L moments

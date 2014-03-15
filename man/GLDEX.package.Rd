@@ -44,13 +44,13 @@ Lmoments and t1lmoments written by Juha Karvanen distributed under GPL.
 \tabular{ll}{
 Package: \tab GLDEX\cr
 Type: \tab Package\cr
-Version: \tab 1.0.4.5\cr
-Date: \tab 2013-12-03\cr
+Version: \tab 2.0.0.0\cr
+Date: \tab 2014-03-25\cr
 License: \tab GPL (>= 3.0)\cr
 }
 This package allows a direct fitting method onto the data set using 
-\code{\link{fun.RMFMKL.ml}}, \code{\link{fun.RMFMKL.hs}}, 
-\code{\link{fun.RMFMKL.hs.nw}}, \code{\link{fun.RPRS.ml}}, 
+\code{\link{fun.RMFMKL.ml}}, \code{\link{fun.RMFMKL.ml.m}}, \code{\link{fun.RMFMKL.hs}}, 
+\code{\link{fun.RMFMKL.hs.nw}}, \code{\link{fun.RPRS.ml}}, \code{\link{fun.RPRS.ml.m}},
 \code{\link{fun.RPRS.hs}}, \code{\link{fun.RPRS.hs.nw}},
 \code{\link{fun.RMFMKL.qs}}, \code{\link{fun.RPRS.qs}}, 
 \code{\link{fun.RMFMKL.mm}}, \code{\link{fun.RPRS.mm}}, 
@@ -128,9 +128,12 @@ Quantile Matching Method. Handbook of Distribution Fitting Methods with R.
 Su, S. (2010). Chapter 15: Fitting GLD to data using GLDEX 1.0.4 in R. Handbook 
 of Distribution Fitting Methods with R. (Karian and Dudewicz) 585-608.
 
+Su, S. (In Press) "Flexible Parametric Quantile Regression Model" Statistics &
+Computing  
+
 }
 \seealso{
-\pkg{gld} package in R.
+\pkg{GLDreg} package in R for GLD regression models.
 }
 \examples{
 
@@ -139,6 +142,14 @@ of Distribution Fitting Methods with R. (Karian and Dudewicz) 585-608.
 set.seed(1000)
 
 junk<-rweibull(300,3,2)
+
+### A faster ML estimtion 
+
+# junk.fit1<-fun.RMFMKL.ml.m(junk)
+# junk.fit2<-fun.RPRS.ml.m(junk)
+
+# qqplot.gld(junk.fit1,data=junk,param="fmkl")
+# qqplot.gld(junk.fit2,data=junk,param="rs")
 
 ### Using discretised approach, with 50 classes
 

@@ -10,7 +10,7 @@
 \concept{descriptive statistics}
 \title{L-moments}
 \description{
-  Calculates sample L-moments, L-coefficients and covariance matrix of L-moments. 
+Calculates sample L-moments, L-coefficients and covariance matrix of L-moments. 
 }
 \usage{
 Lmoments(data,rmax=4,na.rm=FALSE,returnobject=FALSE,trim=c(0,0))

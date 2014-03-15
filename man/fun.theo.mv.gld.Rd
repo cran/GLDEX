@@ -16,7 +16,7 @@ fun.theo.mv.gld(L1, L2, L3, L4, param, normalise="N")
   \item{L2}{ Lambda 2. }
   \item{L3}{ Lambda 3. }
   \item{L4}{ Lambda 4. }
-  \item{param}{ \code{rs} or \code{fmkl} distribution. }
+  \item{param}{ "rs" or "fmkl" or "fkml" }
   \item{normalise}{ "Y" if you want kurtosis to be calculated with reference
   to kurtosis = 0 under Normal distribution.
 }

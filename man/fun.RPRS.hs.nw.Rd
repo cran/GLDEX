@@ -42,7 +42,8 @@ leap = 3,FUN="runif.sobol",no=10000)
   data. 
 }
 \value{
- A vector representing four parameters of the RS generalised lambda distribution.
+ A vector representing four parameters of the RS generalised lambda 
+ distribution.
 }
 \references{ Su, S. (2005). A Discretized Approach to Flexibly Fit Generalized 
 Lambda Distributions to Data. Journal of Modern Applied Statistical Methods 

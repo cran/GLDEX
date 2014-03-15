@@ -7,7 +7,8 @@ mixture of two generalised lambda distributions. }
 This is the bimodal counterpart for \code{\link{fun.comp.moments.ml.2}} and 
 \code{\link{fun.comp.moments.ml}}. }
 \usage{
-fun.theo.bi.mv.gld(L1, L2, L3, L4, param1, M1, M2, M3, M4, param2, p1,normalise="N")
+fun.theo.bi.mv.gld(L1, L2, L3, L4, param1, M1, M2, M3, M4, param2, p1,
+normalise="N")
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -54,7 +55,8 @@ distributions. }
 \seealso{ \code{\link{fun.moments.bimodal}}, \code{\link{fun.simu.bimodal}}, 
 \code{\link{fun.rawmoments}} }
 \examples{
-## Fits the Old Faithful geyser data (first column) using the maximum likelihood.
+## Fits the Old Faithful geyser data (first column) using the maximum 
+## likelihood.
 # fit1<-fun.auto.bimodal.ml(faithful[,1],init1.sel="rmfmkl",init2.sel="rmfmkl",
 # init1=c(-0.25,1.5),init2=c(-0.25,1.5),leap1=3,leap2=3)
 

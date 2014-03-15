@@ -73,7 +73,8 @@ noted by the users.
 \seealso{ \code{\link{fun.class.regime.bi}},\code{\link{fun.bimodal.fit.pml}},
 \code{\link{fun.bimodal.fit.ml}} }
 \examples{
-## Split the first column of the faithful data into two using fun.class.regime.bi
+## Split the first column of the faithful data into two using 
+## fun.class.regime.bi
 # faithful1.mod<-fun.class.regime.bi(faithful[,1], 0.1, clara)
 
 ## Save the datasets

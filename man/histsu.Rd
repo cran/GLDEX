@@ -61,7 +61,8 @@ histogram to that as specified by the user.
 }
 \value{
 An object of class \code{"histogram"} which is a list with components:
-  \item{breaks}{ The n+1 cell boundaries (=\code{breaks} if that was a vector). }
+  \item{breaks}{ The n+1 cell boundaries (=\code{breaks} if that was a vector). 
+  }
   \item{counts}{ N integers; for each cell, the number of \code{x[]} inside. }
   \item{density}{ Values as estimated density values. If \code{all(diff(breaks) 
   == 1)}, they are the relative frequencies counts/n. } 

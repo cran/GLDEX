@@ -46,8 +46,8 @@
   \item{lambda2}{ Scale parameter }
   \item{lambda3}{ First shape parameter }
   \item{lambda4}{ Second shape parameter }
-  \item{param}{ \code{"fmkl"} uses Freimer, Mudholkar,
-          Kollia and Lin (1988) and it is the default setting. \code{"rs"} uses 
+  \item{param}{ \code{"fmkl"} or \code{"fkml"} uses Freimer, Kollia, Mudholkar,
+          and Lin (1988) and it is the default setting. \code{"rs"} uses 
           Ramberg and Schmeiser (1974) }
   \item{inverse.eps}{ Accuracy of calculation for the numerical determination of
            F(x), defaults to 1e-8 }
@@ -95,7 +95,7 @@
      \item{rgl}{ generates random observations. }
 }
 \references{
-     Freimer, M., Mudholkar, G. S., Kollia, G. & Lin, C. T. (1988),  A
+     Freimer, M., Kollia, G., Mudholkar, G. S. & Lin, C. T. (1988),  A
      study of the generalized tukey lambda family, Communications  in
      Statistics - Theory and Methods *17*, 3547-3567.
 

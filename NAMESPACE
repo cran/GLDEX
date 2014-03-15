@@ -1,3 +1,5 @@
 useDynLib(GLDEX)
 
 exportPattern("^[^\\.]")
+
+import(cluster)

@@ -33,7 +33,8 @@ This function is based on scheme detailed in the literature below but it has
 been modified by the author (Steve Su).
 }
 \value{
-A vector representing four parametefmkl of the FMKL generalised lambda distribution.
+A vector representing four parametefmkl of the FMKL generalised lambda 
+distribution.
 }
 \references{
 Asquith, W. (2007). 

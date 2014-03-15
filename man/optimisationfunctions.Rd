@@ -2,6 +2,8 @@
 \alias{optim.fun2.nw}
 \alias{optim.fun2}
 \alias{optim.fun3}
+\alias{optim.fun3.C}
+\alias{optim.fun3.C.m}
 \alias{optim.fun4}
 \alias{optim.fun5}
 \alias{optim.fun6}

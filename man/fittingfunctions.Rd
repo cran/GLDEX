@@ -5,12 +5,14 @@
 \alias{fun.fit.gl.v2b}
 \alias{fun.fit.gl.v3}
 \alias{fun.fit.gl.v3a}
+\alias{fun.fit.gl.v3m}
 \alias{fun.fit.gl.v4}
 \alias{fun.fit.gl.v4a}
 \alias{fun.fit.gl.v6}
 \alias{fun.fit.gl.v6a}
 \alias{fun.fit.gl.v.lm}
 \alias{fun.fit.gl.v.lma}
+\alias{fun.fix.mean}
 
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{ This is a collection of functions designed to implement the fitting 
