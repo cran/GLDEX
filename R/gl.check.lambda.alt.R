@@ -1,7 +1,9 @@
 "gl.check.lambda.alt" <-
 function(l1, l2, l3, l4, param = "fmkl")
 {
-param <- switch(param,
+param <- switch(param,  
+fkml = ,
+FKML = ,
 freimer = ,
 frm = ,
 FMKL = ,

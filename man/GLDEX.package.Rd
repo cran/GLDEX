@@ -44,8 +44,8 @@ Lmoments and t1lmoments written by Juha Karvanen distributed under GPL.
 \tabular{ll}{
 Package: \tab GLDEX\cr
 Type: \tab Package\cr
-Version: \tab 2.0.0.0\cr
-Date: \tab 2014-03-25\cr
+Version: \tab 2.0.0.1\cr
+Date: \tab 2014-11-01\cr
 License: \tab GPL (>= 3.0)\cr
 }
 This package allows a direct fitting method onto the data set using 
@@ -128,7 +128,7 @@ Quantile Matching Method. Handbook of Distribution Fitting Methods with R.
 Su, S. (2010). Chapter 15: Fitting GLD to data using GLDEX 1.0.4 in R. Handbook 
 of Distribution Fitting Methods with R. (Karian and Dudewicz) 585-608.
 
-Su, S. (In Press) "Flexible Parametric Quantile Regression Model" Statistics &
+Su, S. (2014) "Flexible Parametric Quantile Regression Model" Statistics &
 Computing  
 
 }

@@ -1,4 +1,4 @@
-52e9221d4b235946e9bb138df81bac44 *DESCRIPTION
+7183973850436ca559436ff440b91c29 *DESCRIPTION
 c118064d929f85b59104015c9ea0035d *NAMESPACE
 09eed6c83482104589e6f1e55e068d1b *R/085A-LowDiscrepancy.R
 fe887e74c8390e48cfa3000300fff07c *R/Lmoments.R
@@ -96,7 +96,7 @@ bbbeb5bf9ee75c4c5a051898a6caa837 *R/fun.rs.perc.sol.R
 370a73d147d919401f4afdc496b45b10 *R/fun.theo.mv.gld.R
 a38a3d827ff007ac4d63d3a6ebf2e450 *R/fun.which.zero.R
 d0be9a304c3f171f0899479d2ba6677c *R/fun.zero.omit.R
-0faf7d0f49d4906496c8bcf7bacd0dc9 *R/gl.check.lambda.alt.R
+0b17aced48c0b0cc381e6c600d37faa7 *R/gl.check.lambda.alt.R
 d6482bb1b948a1f54566ab8a52e10d78 *R/gl.check.lambda.alt1.R
 3eb3ce54c2a1696fbfbe2fd0b534735d *R/hiddenfunctions.R
 b873dd63493230a9430a14dc9dad11ee *R/histsu.R
@@ -128,9 +128,10 @@ b4079d1194aa3a7496fc472e816d432f *R/skewness.R
 1c6e49622a14f98f56ee57342e6deede *R/starship.R
 b298503ddbee43d26157c1ab439ff088 *R/t1lmoments.R
 664ddf135dca2bccf729801d0b61fb9c *R/which.na.R
+23161c7eb305fec411df18388de0d35c *README
 64d2624c52721971d15ae22a0801ca0a *man/085A-LowDiscrepancy.Rd
 e2ab99700280602c30befe497e248b22 *man/FMKLfittingandbasicfunctions.Rd
-e3e05c1709f53dcfad562166fcf7a8c9 *man/GLDEX.package.Rd
+d1bb1d8805f3bbe5b535318febbd99fa *man/GLDEX.package.Rd
 36a6675bc3715198834a8298371ed276 *man/GLDfunctions.Rd
 27b2150dd13bd2fd7f9be454d7c183f1 *man/Lmoments.Rd
 ef673486fcaa278af60c4a17cfa532a9 *man/QUnif.Rd
