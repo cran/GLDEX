@@ -1,4 +1,4 @@
-7183973850436ca559436ff440b91c29 *DESCRIPTION
+c0b1603be262450d98c1490c4ce048e8 *DESCRIPTION
 c118064d929f85b59104015c9ea0035d *NAMESPACE
 09eed6c83482104589e6f1e55e068d1b *R/085A-LowDiscrepancy.R
 fe887e74c8390e48cfa3000300fff07c *R/Lmoments.R
@@ -116,7 +116,7 @@ cb7ed78e79694f7c975960b19a4158be *R/optim.fun3.C.R
 3477a6997eae70f8a7c19ee0338c542e *R/optim.fun5.R
 6cb1f48da590ce4fb14d2a558b5a0c88 *R/optim.fun6.R
 416be10d46f0b7eaf820275be9466a10 *R/optim.fun7.R
-5a5c4d3ef1a29928a8b8e5897cdacefa *R/pgl.R
+e77ecd09f77f7b64267d762884358a18 *R/pgl.R
 86bcd49073c387d14d71a3a3a0169cc7 *R/pretty.su.R
 bf456e186fec06dae98d665e885637d5 *R/qdgl.R
 c3f40263bb5fd469646335d41aa11dfb *R/qgl.R
@@ -131,7 +131,7 @@ b298503ddbee43d26157c1ab439ff088 *R/t1lmoments.R
 23161c7eb305fec411df18388de0d35c *README
 64d2624c52721971d15ae22a0801ca0a *man/085A-LowDiscrepancy.Rd
 e2ab99700280602c30befe497e248b22 *man/FMKLfittingandbasicfunctions.Rd
-d1bb1d8805f3bbe5b535318febbd99fa *man/GLDEX.package.Rd
+0b6b10f446dde0a02961a6057a7d0c8a *man/GLDEX.package.Rd
 36a6675bc3715198834a8298371ed276 *man/GLDfunctions.Rd
 27b2150dd13bd2fd7f9be454d7c183f1 *man/Lmoments.Rd
 ef673486fcaa278af60c4a17cfa532a9 *man/QUnif.Rd

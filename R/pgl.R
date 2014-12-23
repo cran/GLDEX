@@ -10,7 +10,7 @@ function (q, lambda1 = 0, lambda2 = NULL, lambda3 = NULL, lambda4 = NULL,
        return(rep(NA,length(q)))
     }
 
-    if (tolower(param)=="fkml"){
+    if (tolower(param)=="fkml" | tolower(param)=="fmkl" ){
 
     param<-"fmkl"
 
