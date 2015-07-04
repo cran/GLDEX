@@ -3,3 +3,6 @@ useDynLib(GLDEX)
 exportPattern("^[^\\.]")
 
 import(cluster)
+import("grDevices")
+import("graphics")
+import("stats")
