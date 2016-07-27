@@ -1,4 +1,4 @@
-6137b18720b60ba84eec10722a29b22d *DESCRIPTION
+eb9ac1dfc52d526d335a5bf336fb9f82 *DESCRIPTION
 92b1c4200625006ab623f30b7e5a3dbd *NAMESPACE
 09eed6c83482104589e6f1e55e068d1b *R/085A-LowDiscrepancy.R
 fe887e74c8390e48cfa3000300fff07c *R/Lmoments.R
@@ -43,10 +43,10 @@ ef62b9047b8a6c701a5ccc19ed63807e *R/fun.data.fit.lm.R
 647e34258213e19a010da1b68652d7f0 *R/fun.data.fit.ml.R
 393b0ea215a3c7a614f4e5d3642eb934 *R/fun.data.fit.mm.R
 67952505b449949184ecfd98eb2421cc *R/fun.data.fit.qs.R
-04313e53b334a61a36e0c806aeb9caa1 *R/fun.diag.ks.g.R
-e771373307dfc2f08366cbb1d3ce4d3b *R/fun.diag.ks.g.bimodal.R
-10a4e710ff73a6a2ba93637bd5710611 *R/fun.diag1.R
-424e2b7bf93ae01bfc657dee3142fff0 *R/fun.diag2.R
+92746f4531e465251bf1b5a9bb13f138 *R/fun.diag.ks.g.R
+78f439b25673b1d12ca89e36b433d158 *R/fun.diag.ks.g.bimodal.R
+db788efc2b917cc71309300100a3941f *R/fun.diag1.R
+81014c594b444603f603f7bbb7845de7 *R/fun.diag2.R
 76cf9488135cd3d02b4f2986caf21226 *R/fun.disc.estimation.R
 8c790ff8acc35348f0e73078921b3d70 *R/fun.fit.gl.v.lm.R
 ec26fb7afe57f5fce2dafafb34b702af *R/fun.fit.gl.v.lma.R
@@ -128,6 +128,7 @@ b4079d1194aa3a7496fc472e816d432f *R/skewness.R
 1c6e49622a14f98f56ee57342e6deede *R/starship.R
 b298503ddbee43d26157c1ab439ff088 *R/t1lmoments.R
 664ddf135dca2bccf729801d0b61fb9c *R/which.na.R
+23161c7eb305fec411df18388de0d35c *README
 64d2624c52721971d15ae22a0801ca0a *man/085A-LowDiscrepancy.Rd
 e2ab99700280602c30befe497e248b22 *man/FMKLfittingandbasicfunctions.Rd
 0b6b10f446dde0a02961a6057a7d0c8a *man/GLDEX.package.Rd
@@ -169,10 +170,10 @@ aff24f55c282aca31e63e2037a9c86de *man/fun.data.fit.hs.Rd
 a9e11a352e88f5761c7695778ccf2838 *man/fun.data.fit.ml.Rd
 beabdf88e40fd542f74e309677defa27 *man/fun.data.fit.mm.Rd
 9d48400ca5c0572ea7ca1cdfc3a81a3a *man/fun.data.fit.qs.Rd
-9031763d05d1e68210d25b672a9a1685 *man/fun.diag.ks.g.Rd
-7ff4e85a4d71a6a9554fc40c6a9d1ce4 *man/fun.diag.ks.g.bimodal.Rd
-0216609f54e98a442e7efb57d20ddf7e *man/fun.diag1.Rd
-b366bf61aea1d7c6a7e987bbda06bae0 *man/fun.diag2.Rd
+2a09764226a7bb2e90bf7e2c90cb01b2 *man/fun.diag.ks.g.Rd
+5bcc6b003d1aa1092157a03632e43375 *man/fun.diag.ks.g.bimodal.Rd
+6cf929e56af1de720f369548a19cc6cb *man/fun.diag1.Rd
+f8d01a301bea937202bae6023c0359d3 *man/fun.diag2.Rd
 d944cd389667e7896d648127a8f57857 *man/fun.disc.estimation.Rd
 44a5440f1f1f6b4873f1bbb43c914229 *man/fun.gen.qrn.Rd
 3b255269b8ea2c9892ac4b690b5ea0d5 *man/fun.lm.theo.gld.Rd

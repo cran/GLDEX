@@ -9,7 +9,7 @@ distribution with reference to an empirical data. It is also
 tailored for output obtained from the \code{\link{fun.data.fit.ml}} function.
 }
 \usage{
-fun.diag2(result, data, no.test = 1000, len=100)
+fun.diag2(result, data, no.test = 1000, len=100, alpha = 0.05)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -18,9 +18,10 @@ fun.diag2(result, data, no.test = 1000, len=100)
   \item{no.test}{ Number of times to do the KS tests. }
   \item{len}{ Number of observations to sample from the data. This is also the 
   number of observations sampled from the fitted distribution in each KS test. }
+  \item{alpha}{ Significance level of KS test. }
 }
 \value{
-A vector showing the number of times the KS p-value is greater than 0.05 for 
+A vector showing the number of times the KS p-value is greater than alpha for 
 each of the distribution fit strategy.
 }
 \references{ Su, S. (2005). A Discretized Approach to Flexibly Fit Generalized 

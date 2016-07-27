@@ -9,7 +9,7 @@ distribution with reference to a theoretical distribution. It is also
 tailored for output obtained from the \code{\link{fun.data.fit.ml}} function.
 }
 \usage{
-fun.diag1(result, test, no.test = 1000)
+fun.diag1(result, test, no.test = 1000, alpha = 0.05)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -17,9 +17,10 @@ fun.diag1(result, test, no.test = 1000)
   \item{test}{ Simulated observations from theoretical distribution, the length 
   should be no.test\eqn{\mbox{\textasciitilde}}{^}2. }
   \item{no.test}{ Number of times to do the KS tests. }
+  \item{alpha}{ Significance level of KS test. }
 }
 \value{
-A vector showing the number of times the KS p-value is greater than 0.05 for 
+A vector showing the number of times the KS p-value is greater than alpha for 
 each of the distribution fit strategy.
 }
 \references{ Su, S. (2005). A Discretized Approach to Flexibly Fit Generalized 

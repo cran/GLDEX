@@ -1,5 +1,5 @@
 "fun.diag.ks.g.bimodal" <-
-function(result1, result2,prop1,prop2,data, no.test = 1000, len = floor(0.9 * length(data)), param1,param2)
+function(result1, result2,prop1,prop2,data, no.test = 1000, len = floor(0.9 * length(data)), param1,param2,alpha=0.05)
 {   
 
 if(length(result1)==9){
@@ -21,7 +21,7 @@ sample.fitted2 <- rgl(len * no.test-no.1, result2[1], result2[2], result2[3], re
 test <- split(data, 1:no.test)
 sample.fitted <- split(c(sample.fitted1,sample.fitted2)[sample(length(data), no.test * len, TRUE)], 1:no.test)
 result.o <- sum(sapply(1:no.test, function(i, test, sample.fitted)
-ks.gof(test[[i]], sample.fitted[[i]])$p.value, test, sample.fitted) > 0.05)
+ks.gof(test[[i]], sample.fitted[[i]])$p.value, test, sample.fitted) > alpha)
 return(result.o)
 }
 

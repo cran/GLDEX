@@ -8,7 +8,7 @@ as the observations simulated from the bimodal data set.
 }
 \usage{
 fun.diag.ks.g.bimodal(result1, result2, prop1, prop2, data, no.test = 1000, 
-len = floor(0.9 * length(data)), param1, param2)
+len = floor(0.9 * length(data)), param1, param2, alpha = 0.05)
 }
 \arguments{
   \item{result1}{ A vector representing the four parameters of the first 
@@ -26,9 +26,10 @@ len = floor(0.9 * length(data)), param1, param2)
   \code{"rs"} or \code{"fmkl"}. }
   \item{param2}{ Type of second generalised lambda distribution, can be 
   \code{"rs"} or \code{"fmkl"}. }
+  \item{alpha}{ Significance level of KS test. }
 }
 \value{
-A numerical value representing number of times the p-value exceeds 0.05.
+A numerical value representing number of times the p-value exceeds alpha.
 }
 \references{ Stephens, M. A. (1986). Tests based on EDF statistics. In Goodness-
 of-Fit Techniques. D'Agostino, R. B. and Stevens, M. A., eds. New York: Marcel 

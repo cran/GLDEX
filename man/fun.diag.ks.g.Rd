@@ -11,7 +11,7 @@ dataset }
 }
 \usage{
 fun.diag.ks.g(result, data, no.test = 1000, len = floor(0.9 * length(data)), 
-param)
+param, alpha = 0.05)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -22,10 +22,11 @@ param)
   \item{len}{ Number of data to sample. }
   \item{param}{ Type of the generalised lambda distribution, \code{"rs"} or 
   \code{"fmkl"}. }
+  \item{alpha}{ Significance level of KS test. }
 }
 
 \value{
-A numerical value representing number of times the p-value exceeds 0.05.
+A numerical value representing number of times the p-value exceeds alpha.
 }
 \references{ Stephens, M. A. (1986). Tests based on EDF statistics. 
 In Goodness-of-Fit Techniques. D'Agostino, R. B. and Stevens, M. A., eds. 
