@@ -8,6 +8,10 @@ function (L1, L2, L3, L4, param)
         L1 <- L1[1]
     }
     result <- rep(NA, 4)
+
+if(fun.check.gld(L1,L2,L3,L4,param)==FALSE){
+return(result)}
+
     if (tolower(param) == "rs") {
         result[1] <- L1 + 1/L2 * ((L3 + 1)^-1 - (L4 + 1)^-1)
         result[2] <- fun.Lm.gt.2.rs(L3, L4, 2)/L2

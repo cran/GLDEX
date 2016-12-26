@@ -1,4 +1,4 @@
-eb9ac1dfc52d526d335a5bf336fb9f82 *DESCRIPTION
+2deda112b1cd0320c0ff1749dc75539b *DESCRIPTION
 92b1c4200625006ab623f30b7e5a3dbd *NAMESPACE
 09eed6c83482104589e6f1e55e068d1b *R/085A-LowDiscrepancy.R
 fe887e74c8390e48cfa3000300fff07c *R/Lmoments.R
@@ -73,7 +73,7 @@ f1c78be02730a68cd7a7369c41330c1d *R/fun.fmkl0.R
 6c7000a3bd4d533ab8def6dbb4ce8e69 *R/fun.fmklb.R
 a14a5088d78a8586793bb515563b929c *R/fun.gen.qrn.R
 95fd675b1914b672d9b7d2beadc45be4 *R/fun.lambda.percentile.R
-ede3db657f19943b6a0050d28cfcbbbf *R/fun.lm.theo.gld.R
+ae1e264a9e251f33fcae51826027ba98 *R/fun.lm.theo.gld.R
 6cd1eddb3f6cc459a0a189ec03975771 *R/fun.mApply.R
 06e3b4794c2c11bbf46707e303b19663 *R/fun.minmax.check.gld.R
 6ff1bf5de9fde02b19a4d7fc638f910d *R/fun.moments.R
@@ -84,7 +84,7 @@ b86474ddadf6b2217822fd41e6e0ee29 *R/fun.percentile.R
 7af16011b261d4f6289152542249d18f *R/fun.plot.fit.R
 c810c2a27a6ce28ff777dd096fcc905e *R/fun.plot.fit.bm.R
 1b936599ba2f0f2354e2becb657215a6 *R/fun.plot.many.gld.R
-24aa39a8c00a1b006c0494a6cfc6dd81 *R/fun.rawmoments.R
+88da43c027b37c1c490dcddd11209b50 *R/fun.rawmoments.R
 409aa6c8a302494f2ffebf091fceed1a *R/fun.rs.nr.R
 cb4b4c2c2efcd04f6b016392993ef765 *R/fun.rs.perc.gradient.R
 76dec14490b6feb5a1dd76db2e1fec71 *R/fun.rs.perc.min.R
@@ -93,7 +93,7 @@ bbbeb5bf9ee75c4c5a051898a6caa837 *R/fun.rs.perc.sol.R
 1df686fd06b8805c4cde7437ffb604e8 *R/fun.rsb.R
 50a15e3cc2fe00df3306ff33d10e5bad *R/fun.simu.bimodal.R
 1f9bb67875147c047bc1fae0f718f53f *R/fun.theo.bi.mv.gld.R
-370a73d147d919401f4afdc496b45b10 *R/fun.theo.mv.gld.R
+7461810f7dcc4ad7f95fd5f94e2627cd *R/fun.theo.mv.gld.R
 a38a3d827ff007ac4d63d3a6ebf2e450 *R/fun.which.zero.R
 d0be9a304c3f171f0899479d2ba6677c *R/fun.zero.omit.R
 0b17aced48c0b0cc381e6c600d37faa7 *R/gl.check.lambda.alt.R
@@ -131,7 +131,7 @@ b298503ddbee43d26157c1ab439ff088 *R/t1lmoments.R
 23161c7eb305fec411df18388de0d35c *README
 64d2624c52721971d15ae22a0801ca0a *man/085A-LowDiscrepancy.Rd
 e2ab99700280602c30befe497e248b22 *man/FMKLfittingandbasicfunctions.Rd
-0b6b10f446dde0a02961a6057a7d0c8a *man/GLDEX.package.Rd
+33cc471503b85e3899000d09d17e120d *man/GLDEX.package.Rd
 36a6675bc3715198834a8298371ed276 *man/GLDfunctions.Rd
 27b2150dd13bd2fd7f9be454d7c183f1 *man/Lmoments.Rd
 ef673486fcaa278af60c4a17cfa532a9 *man/QUnif.Rd

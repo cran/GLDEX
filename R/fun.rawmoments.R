@@ -1,7 +1,10 @@
-
 "fun.rawmoments"<-
 function (L1, L2, L3, L4, param = "fmkl") 
 {
+
+if(fun.check.gld(L1,L2,L3,L4,param)==FALSE){
+return(rep(NA,4))}
+
     if (param == "rs") {
         v1 <- fun.rsb(L3, L4, 1)
         v2 <- fun.rsb(L3, L4, 2)

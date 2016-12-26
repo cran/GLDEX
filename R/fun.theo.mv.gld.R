@@ -8,6 +8,10 @@ function (L1, L2, L3, L4, param, normalise = "N")
         L1 <- L1[1]
     }
     result <- rep(NA, 4)
+
+if(fun.check.gld(L1,L2,L3,L4,param)==FALSE){
+return(result)}
+
     if (tolower(param) == "rs") {
         v1 <- fun.rsb(L3, L4, 1)
         v2 <- fun.rsb(L3, L4, 2)

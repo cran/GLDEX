@@ -44,8 +44,8 @@ Lmoments and t1lmoments written by Juha Karvanen distributed under GPL.
 \tabular{ll}{
 Package: \tab GLDEX\cr
 Type: \tab Package\cr
-Version: \tab 2.0.0.2\cr
-Date: \tab 2014-12-23\cr
+Version: \tab 2.0.0.5\cr
+Date: \tab 2016-12-26\cr
 License: \tab GPL (>= 3.0)\cr
 }
 This package allows a direct fitting method onto the data set using 
