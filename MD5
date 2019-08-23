@@ -1,4 +1,4 @@
-2deda112b1cd0320c0ff1749dc75539b *DESCRIPTION
+7b44c483eecd7204a97e1dd709ef62fa *DESCRIPTION
 92b1c4200625006ab623f30b7e5a3dbd *NAMESPACE
 09eed6c83482104589e6f1e55e068d1b *R/085A-LowDiscrepancy.R
 fe887e74c8390e48cfa3000300fff07c *R/Lmoments.R
@@ -170,8 +170,8 @@ aff24f55c282aca31e63e2037a9c86de *man/fun.data.fit.hs.Rd
 a9e11a352e88f5761c7695778ccf2838 *man/fun.data.fit.ml.Rd
 beabdf88e40fd542f74e309677defa27 *man/fun.data.fit.mm.Rd
 9d48400ca5c0572ea7ca1cdfc3a81a3a *man/fun.data.fit.qs.Rd
-2a09764226a7bb2e90bf7e2c90cb01b2 *man/fun.diag.ks.g.Rd
-5bcc6b003d1aa1092157a03632e43375 *man/fun.diag.ks.g.bimodal.Rd
+0abed969f745b592e657f83cae4c7040 *man/fun.diag.ks.g.Rd
+5887de7958562e400659788e6bd92297 *man/fun.diag.ks.g.bimodal.Rd
 6cf929e56af1de720f369548a19cc6cb *man/fun.diag1.Rd
 f8d01a301bea937202bae6023c0359d3 *man/fun.diag2.Rd
 d944cd389667e7896d648127a8f57857 *man/fun.disc.estimation.Rd

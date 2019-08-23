@@ -3,7 +3,7 @@
 \title{ Compute the simulated Kolmogorov-Smirnov tests for the bimodal dataset }
 \description{
 This function counts the number of times the p-value exceed 0.05 for the null 
-hypothesis that the observations simulated tom fitted distribution is the same 
+hypothesis that the observations simulated from the fitted distribution is the same 
 as the observations simulated from the bimodal data set. 
 }
 \usage{
