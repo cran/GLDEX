@@ -139,9 +139,9 @@ Computing
 
 #### Univariate distributions example:
 
-set.seed(1000)
+# set.seed(1000)
 
-junk<-rweibull(300,3,2)
+# junk<-rweibull(300,3,2)
 
 ### A faster ML estimtion 
 
@@ -296,21 +296,21 @@ junk<-rweibull(300,3,2)
 
 # Example on fitting mixture of normal distributions
 
-#data1<-c(rnorm(1500,-1,2/3),rnorm(1500,1,2/3))
+# data1<-c(rnorm(1500,-1,2/3),rnorm(1500,1,2/3))
 
-#junk<-fun.auto.bimodal.ml(data1,per.of.mix=0.01,clustering.m=data1>0,
-#init1.sel="rprs",init2.sel="rmfmkl",init1=c(-1.5,1.5),init2=c(-0.25,1.5),
-#leap1=3,leap2=3)
+# junk<-fun.auto.bimodal.ml(data1,per.of.mix=0.01,clustering.m=data1>0,
+# init1.sel="rprs",init2.sel="rmfmkl",init1=c(-1.5,1.5),init2=c(-0.25,1.5),
+# leap1=3,leap2=3)
 
-#fun.plot.fit.bm(nclass=50,fit.obj=junk,data=data1,
-#name="Maximum likelihood using",xlab="faithful1",param.vec=c("rs","fmkl"))
+# fun.plot.fit.bm(nclass=50,fit.obj=junk,data=data1,
+# name="Maximum likelihood using",xlab="faithful1",param.vec=c("rs","fmkl"))
 
-#qqplot.gld.bi(data1,junk$par,param1="rs",param2="fmkl",
-#name="RS FMKL ML fit",range=c(0.001,0.999))
+# qqplot.gld.bi(data1,junk$par,param1="rs",param2="fmkl",
+# name="RS FMKL ML fit",range=c(0.001,0.999))
 
 # Generate random observations from FMKL generalised lambda distributions with 
 # parameters (1,2,3,4) and (4,3,2,1) with 50\% of data from each distribution.
-fun.simu.bimodal(c(1,2,3,4),c(4,3,2,1),prop1=0.5,param1="fmkl",param2="fmkl")
+# fun.simu.bimodal(c(1,2,3,4),c(4,3,2,1),prop1=0.5,param1="fmkl",param2="fmkl")
 }
 \keyword{distribution} 
 \keyword{smooth}

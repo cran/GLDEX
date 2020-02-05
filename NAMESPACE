@@ -1,4 +1,4 @@
-useDynLib(GLDEX)
+useDynLib(GLDEX, .registration = TRUE,.fixes = "C_")
 
 exportPattern("^[^\\.]")
 

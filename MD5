@@ -1,5 +1,5 @@
-7b44c483eecd7204a97e1dd709ef62fa *DESCRIPTION
-92b1c4200625006ab623f30b7e5a3dbd *NAMESPACE
+6c655fa3f25fa7ec39e9ec1364759c71 *DESCRIPTION
+9899203ab3051bb76732fb11d0ff9251 *NAMESPACE
 09eed6c83482104589e6f1e55e068d1b *R/085A-LowDiscrepancy.R
 fe887e74c8390e48cfa3000300fff07c *R/Lmoments.R
 c2782abca21451e0c40444b300db224a *R/Lmoments_calc.R
@@ -131,12 +131,12 @@ b298503ddbee43d26157c1ab439ff088 *R/t1lmoments.R
 23161c7eb305fec411df18388de0d35c *README
 64d2624c52721971d15ae22a0801ca0a *man/085A-LowDiscrepancy.Rd
 e2ab99700280602c30befe497e248b22 *man/FMKLfittingandbasicfunctions.Rd
-33cc471503b85e3899000d09d17e120d *man/GLDEX.package.Rd
+3830ca6b4b7cf694a63858d87934b1e2 *man/GLDEX.package.Rd
 36a6675bc3715198834a8298371ed276 *man/GLDfunctions.Rd
 27b2150dd13bd2fd7f9be454d7c183f1 *man/Lmoments.Rd
 ef673486fcaa278af60c4a17cfa532a9 *man/QUnif.Rd
 0f497b2f9d5eb4ff034c78b39c9e2400 *man/RSfittingandbasicfunctions.Rd
-3641b375aa45a896f6320683f2963e4f *man/digitsBase.Rd
+e26ba1a051b05fedb28d2515d4fd776c *man/digitsBase.Rd
 5b39e36e9ccd74ac385883046cb9b717 *man/fittingfunctions.Rd
 855b13915791c1a340893c2acf86833f *man/fun.RMFMKL.hs.Rd
 c9812f37fae0840bc4a7f4a9402365d0 *man/fun.RMFMKL.hs.nw.Rd
@@ -193,7 +193,7 @@ e94601e2f84f60f66b7100544204c757 *man/fun.nclass.e.Rd
 84ee4157c340b60cb597ea034e98f6bf *man/fun.zero.omit.Rd
 734a390ffe0c6ca659a0df7b6b9d6c03 *man/gl.check.lambda.alt.Rd
 1e97db91f44a3131bf59ce649e825999 *man/gl.check.lambda.alt1.Rd
-8c5b755608f1f40c6b256e59711f5a04 *man/hiddenfunctions.Rd
+e95600ad6ad21c6f130763869ba7face *man/hiddenfunctions.Rd
 9714eaf7049a95f797a0398473d1f859 *man/histsu.Rd
 72e0e5a4214c563d623c8365370b1955 *man/is.inf.Rd
 fd7047080f86cb4c6f5a1f8bd8f5199a *man/is.notinf.Rd
@@ -210,3 +210,4 @@ ab79ee449f5acaaf75d41eadb68268fb *man/starship.adaptivegrid.Rd
 0640361ca908854308dd00cc2461ccc4 *man/which.na.Rd
 ac2f961e99b1c81e181152e51a224768 *src/085A-LowDiscrepancy.f
 961b50731c164495ad8e2c061d24e0b8 *src/GLDEX.c
+8a450c10f8c613f5c1fcb2d065288c41 *src/GLDEX_init.c

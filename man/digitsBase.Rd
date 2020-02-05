@@ -22,9 +22,7 @@ digitsBase(x, base = 2, ndigits = 1 + floor(log(max(x), base)))
     representing digits in base \code{base}.
   }
   \item{base}{integer, at least 2 specifying the base for representation.}
-  \item{ndigits}{number of bits/digits to use.}
-  \item{\dots}{potential further arguments passed to methods, notably
-    \code{\link{print}}.}
+  \item{ndigits}{number of bits/digits to use.} 
 }
 \value{
   For \code{digitsBase()}, an object, say \code{m}, of class
