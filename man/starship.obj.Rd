@@ -62,18 +62,16 @@ Statistics \bold{41}, 353--374
 
 Owen, D. B. (1988), \emph{The starship}, Communications in Statistics - 
 Computation and Simulation \bold{17}, 315--323.
-
-\url{http://tolstoy.newcastle.edu.au/~rking/gld/}
 }
-\author{Robert King, \email{robert.king@newcastle.edu.au},
-\url{http://tolstoy.newcastle.edu.au/~rking/}
-Darren Wraith, \email{Darren.Wraith@studentmail.newcastle.edu.au}}
+
+\author{Robert King, Darren Wraith}
+
 \seealso{ 
 \code{\link{starship}} 
 \code{\link{starship.adaptivegrid}}, 
 }
-\examples{
-# data <- rgl(100,0,1,.2,.2)
-# starship.obj(c(0,1,.2,.2),data,"fmkl")
-}
+\examples{\donttest{
+ data <- rgl(100,0,1,.2,.2)
+ starship.obj(c(0,1,.2,.2),data,"fmkl")
+}}
 \keyword{distribution}

@@ -46,10 +46,11 @@ Distributions. Working Paper. }
 
 \seealso{ \code{link{clara}}, \code{\link{pam}}, \code{\link{fanny}} }
 \examples{
-## Classify the faithful[,1] data into two categories with 10\% cross over mix.
-# fun.class.regime.bi(faithful[,1],0.1,clara)
+\donttest{
+# Classify the faithful[,1] data into two categories with 10\% cross over mix.
+ fun.class.regime.bi(faithful[,1],0.1,clara)
 
-## Classify the faithful[,1] data into two categories with no mixing:
-# fun.class.regime.bi(faithful[,1],0,clara)
-}
+# Classify the faithful[,1] data into two categories with no mixing:
+ fun.class.regime.bi(faithful[,1],0,clara)
+}}
 \keyword{cluster}

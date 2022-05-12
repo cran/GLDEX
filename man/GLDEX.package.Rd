@@ -44,8 +44,8 @@ Lmoments and t1lmoments written by Juha Karvanen distributed under GPL.
 \tabular{ll}{
 Package: \tab GLDEX\cr
 Type: \tab Package\cr
-Version: \tab 2.0.0.5\cr
-Date: \tab 2016-12-26\cr
+Version: \tab 2.0.0.8\cr
+Date: \tab 2022-04-28\cr
 License: \tab GPL (>= 3.0)\cr
 }
 This package allows a direct fitting method onto the data set using 
@@ -99,218 +99,229 @@ methods, Chapman & Hall
 Karvanen, J. and A. Nuutinen (2008), 
 Characterizing the generalized lambda distribution by L-moments, 
 Computational Statistics and Data Analysis 52(4): 1971-1983. 
+doi:10.1016/j.csda.2007.06.021
 
 King, R.A.R. & MacGillivray, H. L. (1999), A starship method for fitting the 
 generalised lambda distributions, Australian and New Zealand Journal of 
 Statistics, 41, 353-374 
+doi:10.1111/1467-842X.00089
 
 Ramberg, J. S. & Schmeiser, B. W. (1974), An approximate method for generating 
 asymmetric random variables, Communications of the ACM *17*, 78-82. 
 
 Su, S. (2005). A Discretized Approach to Flexibly Fit Generalized Lambda 
 Distributions to Data. Journal of Modern Applied Statistical Methods (November): 
-408-424.
+408-424. doi:10.22237/jmasm/1130803560
 
 Su, S. (2007). Nmerical Maximum Log Likelihood Estimation for Generalized Lambda 
 Distributions.  Computational Statistics and Data Analysis: *51*, 8, 3983-3998.
+doi:10.1016/j.csda.2006.06.008
 
 Su, S. (2007). Fitting Single and Mixture of Generalized Lambda Distributions to 
 Data via Discretized and Maximum Likelihood Methods: GLDEX in R. Journal of 
-Statistical Software: *21* 9.
+Statistical Software: *21* 9. doi:10.18637/jss.v021.i09
 
 Su, S. (2009). Confidence Intervals for Quantiles Using Generalized Lambda 
 Distributions. Computational Statistics and Data Analysis *53*, 9, 3324-3333.
+doi:10.1016/j.csda.2009.02.014
 
 Su, S. (2010). Chapter 14: Fitting GLDs and Mixture of GLDs to Data using 
 Quantile Matching Method. Handbook of Distribution Fitting Methods with R. 
-(Karian and Dudewicz) 557-583.
+(Karian and Dudewicz) 557-583. doi:10.1201/b10159-3
 
 Su, S. (2010). Chapter 15: Fitting GLD to data using GLDEX 1.0.4 in R. Handbook 
-of Distribution Fitting Methods with R. (Karian and Dudewicz) 585-608.
+of Distribution Fitting Methods with R. (Karian and Dudewicz) 585-608. 
+doi:10.1201/b10159-3
 
-Su, S. (2014) "Flexible Parametric Quantile Regression Model" Statistics &
-Computing  
+Su, S. (2015) "Flexible Parametric Quantile Regression Model" Statistics &
+Computing 25 (3). 635-650. doi:10.1007/s11222-014-9457-1   
+
+Su S. (2021) "Flexible parametric accelerated failure time model" J Biopharm Stat. 
+2021 Sep 31(5):650-667. doi:10.1080/10543406.2021.1934854
 
 }
 \seealso{
 \pkg{GLDreg} package in R for GLD regression models.
 }
 \examples{
+\donttest{
+###Univariate distributions example:
 
-#### Univariate distributions example:
+set.seed(1000)
 
-# set.seed(1000)
+junk<-rweibull(300,3,2)
 
-# junk<-rweibull(300,3,2)
+##A faster ML estimtion 
 
-### A faster ML estimtion 
+junk.fit1<-fun.RMFMKL.ml.m(junk)
+junk.fit2<-fun.RPRS.ml.m(junk)
 
-# junk.fit1<-fun.RMFMKL.ml.m(junk)
-# junk.fit2<-fun.RPRS.ml.m(junk)
+qqplot.gld(junk.fit1,data=junk,param="fmkl")
+qqplot.gld(junk.fit2,data=junk,param="rs")
 
-# qqplot.gld(junk.fit1,data=junk,param="fmkl")
-# qqplot.gld(junk.fit2,data=junk,param="rs")
+##Using discretised approach, with 50 classes
 
-### Using discretised approach, with 50 classes
+#Using discretised method with weights
+obj.fit1.hs<-fun.data.fit.hs(junk)
 
-## Using discretised method with weights
-# obj.fit1.hs<-fun.data.fit.hs(junk)
+#Plot the resulting fit. The fun.plot.fit function also works for singular fits 
+#such as those by fun.plot.fit(obj.fit1.ml,junk,nclass=50,
+#param=c("rs","fmkl","fmkl"),xlab="x")
 
-## Plot the resulting fit. The fun.plot.fit function also works for singular fits 
-## such as those by fun.plot.fit(obj.fit1.ml,junk,nclass=50,
-## param=c("rs","fmkl","fmkl"),xlab="x")
+fun.plot.fit(obj.fit1.hs,junk,nclass=50,param=c("rs","fmkl"),xlab="x")
 
-# fun.plot.fit(obj.fit1.hs,junk,nclass=50,param=c("rs","fmkl"),xlab="x")
+#Compare the mean, variance, skewness and kurtosis of the fitted distribution 
+#with actual data
 
-## Compare the mean, variance, skewness and kurtosis of the fitted distribution 
-## with actual data
+fun.theo.mv.gld(obj.fit1.hs[1,1],obj.fit1.hs[2,1],obj.fit1.hs[3,1],
+obj.fit1.hs[4,1],param="rs")
+fun.theo.mv.gld(obj.fit1.hs[1,2],obj.fit1.hs[2,2],obj.fit1.hs[3,2],
+obj.fit1.hs[4,2],param="fmkl")
+fun.moments.r(junk)
 
-# fun.theo.mv.gld(obj.fit1.hs[1,1],obj.fit1.hs[2,1],obj.fit1.hs[3,1],
-# obj.fit1.hs[4,1],param="rs")
-# fun.theo.mv.gld(obj.fit1.hs[1,2],obj.fit1.hs[2,2],obj.fit1.hs[3,2],
-# obj.fit1.hs[4,2],param="fmkl")
-# fun.moments.r(junk)
+#Conduct resample KS tests
+fun.diag.ks.g(obj.fit1.hs[,1],junk,param="rs")
+fun.diag.ks.g(obj.fit1.hs[,2],junk,param="fmkl")
 
-## Conduct resample KS tests
-# fun.diag.ks.g(obj.fit1.hs[,1],junk,param="rs")
-# fun.diag.ks.g(obj.fit1.hs[,2],junk,param="fmkl")
+##Try another fit, say 15 classes
 
-### Try another fit, say 15 classes
+obj.fit2.hs<-fun.data.fit.hs(junk,rs.default="N",fmkl.default="N",no.c.rs = 15, 
+no.c.fmkl = 15)
 
-# obj.fit2.hs<-fun.data.fit.hs(junk,rs.default="N",fmkl.default="N",no.c.rs = 15, 
-# no.c.fmkl = 15)
+fun.plot.fit(obj.fit2.hs,junk,nclass=50,param=c("rs","fmkl"),xlab="x")
 
-# fun.plot.fit(obj.fit2.hs,junk,nclass=50,param=c("rs","fmkl"),xlab="x")
+fun.theo.mv.gld(obj.fit2.hs[1,1],obj.fit2.hs[2,1],obj.fit2.hs[3,1],
+obj.fit2.hs[4,1],param="rs")
+fun.theo.mv.gld(obj.fit2.hs[1,2],obj.fit2.hs[2,2],obj.fit2.hs[3,2],
+obj.fit2.hs[4,2],param="fmkl")
+fun.moments.r(junk)
 
-# fun.theo.mv.gld(obj.fit2.hs[1,1],obj.fit2.hs[2,1],obj.fit2.hs[3,1],
-# obj.fit2.hs[4,1],param="rs")
-# fun.theo.mv.gld(obj.fit2.hs[1,2],obj.fit2.hs[2,2],obj.fit2.hs[3,2],
-# obj.fit2.hs[4,2],param="fmkl")
-# fun.moments.r(junk)
+fun.diag.ks.g(obj.fit2.hs[,1],junk,param="rs")
+fun.diag.ks.g(obj.fit2.hs[,2],junk,param="fmkl")
 
-# fun.diag.ks.g(obj.fit2.hs[,1],junk,param="rs")
-# fun.diag.ks.g(obj.fit2.hs[,2],junk,param="fmkl")
+##Uses the maximum likelihood estimation method
 
-### Uses the maximum likelihood estimation method
+#Fit the function using fun.data.fit.ml
+obj.fit1.ml<-fun.data.fit.ml(junk)
 
-## Fit the function using fun.data.fit.ml
-# obj.fit1.ml<-fun.data.fit.ml(junk)
+#Plot the resulting fit
+fun.plot.fit(obj.fit1.ml,junk,nclass=50,param=c("rs","fmkl","fmkl"),xlab="x",
+name=".ML")
 
-## Plot the resulting fit
-# fun.plot.fit(obj.fit1.ml,junk,nclass=50,param=c("rs","fmkl","fmkl"),xlab="x",
-# name=".ML")
+#Compare the mean, variance, skewness and kurtosis of the fitted distribution 
+#with actual data
+fun.comp.moments.ml(obj.fit1.ml,junk)
 
-## Compare the mean, variance, skewness and kurtosis of the fitted distribution 
-## with actual data
-# fun.comp.moments.ml(obj.fit1.ml,junk)
+#Do a quantile plot
 
-## Do a quantile plot
+qqplot.gld(junk,obj.fit1.ml[,1],param="rs",name="RS ML fit")
 
-# qqplot.gld(junk,obj.fit1.ml[,1],param="rs",name="RS ML fit")
+#Run a KS resample test on the resulting fit
 
-## Run a KS resample test on the resulting fit
+fun.diag2(obj.fit1.ml,junk,1000)
 
-# fun.diag2(obj.fit1.ml,junk,1000)
+#It is possible to use say fun.data.fit.ml(junk,rs.leap=409,fmkl.leap=409,
+#FUN="QUnif") to find solution under a different set of low discrepancy number 
+#generators.
 
-## It is possible to use say fun.data.fit.ml(junk,rs.leap=409,fmkl.leap=409,
-## FUN="QUnif") to find solution under a different set of low discrepancy number 
-## generators.
+###Bimodal distributions example:
 
-#### Bimodal distributions example:
+#Fitting mixture of generalised lambda distributions on the data set using both 
+#the maximum likelihood and partition maximum likelihood and plot the resulting 
+#fits
 
-## Fitting mixture of generalised lambda distributions on the data set using both 
-## the maximum likelihood and partition maximum likelihood and plot the resulting 
-## fits
+opar <- par() 
+par(mfrow=c(2,1))
 
-# par(mfrow=c(2,1))
+junk<-fun.auto.bimodal.ml(faithful[,1],per.of.mix=0.01,clustering.m=clara,
+init1.sel="rprs",init2.sel="rmfmkl",init1=c(-1.5,1.5),init2=c(-0.25,1.5),
+leap1=3,leap2=3)
+fun.plot.fit.bm(nclass=50,fit.obj=junk,data=faithful[,1],
+name="Maximum likelihood using",xlab="faithful1",param.vec=c("rs","fmkl"))
 
-# junk<-fun.auto.bimodal.ml(faithful[,1],per.of.mix=0.01,clustering.m=clara,
-# init1.sel="rprs",init2.sel="rmfmkl",init1=c(-1.5,1.5),init2=c(-0.25,1.5),
-# leap1=3,leap2=3)
-# fun.plot.fit.bm(nclass=50,fit.obj=junk,data=faithful[,1],
-# name="Maximum likelihood using",xlab="faithful1",param.vec=c("rs","fmkl"))
+#Do a quantile plot
 
-## Do a quantile plot
+qqplot.gld.bi(faithful[,1],junk$par,param1="rs",param2="fmkl",
+name="RS FMKL ML fit",range=c(0.001,0.999))
 
-# qqplot.gld.bi(faithful[,1],junk$par,param1="rs",param2="fmkl",
-# name="RS FMKL ML fit",range=c(0.001,0.999))
+par(opar)
 
-# junk<-fun.auto.bimodal.pml(faithful[,1],clustering.m=clara,init1.sel="rprs",
-# init2.sel="rmfmkl",init1=c(-1.5,1.5),init2=c(-0.25,1.5),leap1=3,leap2=3)
-# fun.plot.fit.bm(nclass=50,fit.obj=junk,data=faithful[,1],
-# name="Partition maximum likelihood using",xlab="faithful1",
-# param.vec=c("rs","fmkl"))
+junk<-fun.auto.bimodal.pml(faithful[,1],clustering.m=clara,init1.sel="rprs",
+init2.sel="rmfmkl",init1=c(-1.5,1.5),init2=c(-0.25,1.5),leap1=3,leap2=3)
+fun.plot.fit.bm(nclass=50,fit.obj=junk,data=faithful[,1],
+name="Partition maximum likelihood using",xlab="faithful1",
+param.vec=c("rs","fmkl"))
 
-## Fit the faithful[,1] data from the dataset library using sobol sequence 
-## generator for the first distribution fit and halton sequence for the second 
-## distribution fit.
+#Fit the faithful[,1] data from the dataset library using sobol sequence 
+#generator for the first distribution fit and halton sequence for the second 
+#distribution fit.
 
-# fit1<-fun.auto.bimodal.ml(faithful[,1],init1.sel="rmfmkl",init2.sel="rmfmkl",
-# init1=c(-0.25,1.5),init2=c(-0.25,1.5),leap1=3,leap2=3,fun1="runif.sobol",
-# fun2="runif.halton")
+fit1<-fun.auto.bimodal.ml(faithful[,1],init1.sel="rmfmkl",init2.sel="rmfmkl",
+init1=c(-0.25,1.5),init2=c(-0.25,1.5),leap1=3,leap2=3,fun1="runif.sobol",
+fun2="runif.halton")
 
-## Run diagnostic KS tests
+#Run diagnostic KS tests
 
-# fun.diag.ks.g.bimodal(fit1$par[1:4],fit1$par[5:8],prop1=fit1$par[9],
-# data=faithful[,1],param1="fmkl",param2="fmkl")
+fun.diag.ks.g.bimodal(fit1$par[1:4],fit1$par[5:8],prop1=fit1$par[9],
+data=faithful[,1],param1="fmkl",param2="fmkl")
 
-## Find the theoretical moments of the fit
+#Find the theoretical moments of the fit
 
-# fun.theo.bi.mv.gld(fit1$par[1],fit1$par[2],fit1$par[3],fit1$par[4],"fmkl",
-# fit1$par[5],fit1$par[6],fit1$par[7],fit1$par[8],"fmkl",fit1$par[9])
+fun.theo.bi.mv.gld(fit1$par[1],fit1$par[2],fit1$par[3],fit1$par[4],"fmkl",
+fit1$par[5],fit1$par[6],fit1$par[7],fit1$par[8],"fmkl",fit1$par[9])
 
-## Compare this with the empirical moments from the data set.
+#Compare this with the empirical moments from the data set.
 
-# fun.moments.r(faithful[,1])
+fun.moments.r(faithful[,1])
 
-## Do a quantile plot
+#Do a quantile plot
 
-# qqplot.gld.bi(faithful[,1],fit1$par,param1="fmkl",param2="fmkl",
-# name="FMKL FMKL ML fit")
+qqplot.gld.bi(faithful[,1],fit1$par,param1="fmkl",param2="fmkl",
+name="FMKL FMKL ML fit")
 
-## Quantile matching method
+#Quantile matching method
 
-## Fitting faithful data from the dataset library, with the clara clustering 
-## regime. The first distribution is RS and the second distribution is fmkl. 
-## The percentage of data mix is 1\%.
+#Fitting faithful data from the dataset library, with the clara clustering 
+#regime. The first distribution is RS and the second distribution is fmkl. 
+#The percentage of data mix is 1\%.
 
-## Fitting normal(3,2) distriution using the default setting
-# junk<-rnorm(50,3,2)
-# fun.data.fit.qs(junk)
+#Fitting normal(3,2) distriution using the default setting
+junk<-rnorm(50,3,2)
+fun.data.fit.qs(junk)
 
-# fun.auto.bimodal.qs(faithful[,1],per.of.mix=0.01,clustering.m=clara,
-# init1.sel="rprs",init2.sel="rmfmkl",init1=c(-1.5,1,5),init2=c(-0.25,1.5),
-# leap1=3,leap2=3)
+fun.auto.bimodal.qs(faithful[,1],per.of.mix=0.01,clustering.m=clara,
+init1.sel="rprs",init2.sel="rmfmkl",init1=c(-1.5,1,5),init2=c(-0.25,1.5),
+leap1=3,leap2=3)
 
-# L Moment matching
+#L Moment matching
 
-## Fitting normal(3,2) distriution using the default setting
-# junk<-rnorm(50,3,2)
-# fun.data.fit.lm(junk)
+#Fitting normal(3,2) distriution using the default setting
+junk<-rnorm(50,3,2)
+fun.data.fit.lm(junk)
 
 # Moment matching method
 
-## Fitting normal(3,2) distriution using the default setting
-# junk<-rnorm(50,3,2)
-# fun.data.fit.mm(junk)
+#Fitting normal(3,2) distriution using the default setting
+junk<-rnorm(50,3,2)
+fun.data.fit.mm(junk)
 
 # Example on fitting mixture of normal distributions
 
-# data1<-c(rnorm(1500,-1,2/3),rnorm(1500,1,2/3))
+data1<-c(rnorm(1500,-1,2/3),rnorm(1500,1,2/3))
 
-# junk<-fun.auto.bimodal.ml(data1,per.of.mix=0.01,clustering.m=data1>0,
-# init1.sel="rprs",init2.sel="rmfmkl",init1=c(-1.5,1.5),init2=c(-0.25,1.5),
-# leap1=3,leap2=3)
+junk<-fun.auto.bimodal.ml(data1,per.of.mix=0.01,clustering.m=data1>0,
+init1.sel="rprs",init2.sel="rmfmkl",init1=c(-1.5,1.5),init2=c(-0.25,1.5),
+leap1=3,leap2=3)
 
-# fun.plot.fit.bm(nclass=50,fit.obj=junk,data=data1,
-# name="Maximum likelihood using",xlab="faithful1",param.vec=c("rs","fmkl"))
+fun.plot.fit.bm(nclass=50,fit.obj=junk,data=data1,
+name="Maximum likelihood using",xlab="faithful1",param.vec=c("rs","fmkl"))
 
-# qqplot.gld.bi(data1,junk$par,param1="rs",param2="fmkl",
-# name="RS FMKL ML fit",range=c(0.001,0.999))
+qqplot.gld.bi(data1,junk$par,param1="rs",param2="fmkl",
+name="RS FMKL ML fit",range=c(0.001,0.999))
 
 # Generate random observations from FMKL generalised lambda distributions with 
 # parameters (1,2,3,4) and (4,3,2,1) with 50\% of data from each distribution.
-# fun.simu.bimodal(c(1,2,3,4),c(4,3,2,1),prop1=0.5,param1="fmkl",param2="fmkl")
-}
+fun.simu.bimodal(c(1,2,3,4),c(4,3,2,1),prop1=0.5,param1="fmkl",param2="fmkl")
+}}
 \keyword{distribution} 
 \keyword{smooth}

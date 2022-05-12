@@ -52,14 +52,15 @@ If there are ties, jittering is used in \code{\link{ks.gof}}.
 \seealso{ \code{\link{fun.diag.ks.g.bimodal}} }
 
 \examples{
-## Generate 1000 random observations from Normal distribution with mean=100, 
-## standard deviation=10. Save this as junk
-# junk<-rnorm(1000,100,10)
+\donttest{
+# Generate 1000 random observations from Normal distribution with mean=100, 
+# standard deviation=10. Save this as junk
+ junk<-rnorm(1000,100,10)
 
-## Fit junk using RPRS method via the maxmum likelihood.
-# fit1<-fun.RPRS.ml(junk, c(-1.5, 1.5), leap = 3)
+# Fit junk using RPRS method via the maxmum likelihood.
+ fit1<-fun.RPRS.ml(junk, c(-1.5, 1.5), leap = 3)
 
-## Calculate the simulated KS test result:
-# fun.diag.ks.g(fit1,junk,param="rs")
-}
+# Calculate the simulated KS test result:
+ fun.diag.ks.g(fit1,junk,param="rs")
+}}
 \keyword{htest}

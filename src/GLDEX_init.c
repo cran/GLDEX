@@ -16,10 +16,6 @@ extern void pgl(void *, void *, void *, void *, void *, void *, void *, void *, 
 extern void q_fmkl_gld_minmax_check(void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *);
 extern void q_rs_gld_minmax_check(void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *);
 
-/* .Fortran calls */
-extern void F77_NAME(halton)(void *, void *, void *, void *, void *, void *, void *);
-extern void F77_NAME(sobol)(void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *);
-
 static const R_CMethodDef CEntries[] = {
     {"check_gld",               (DL_FUNC) &check_gld,                6},
     {"dgl",                     (DL_FUNC) &dgl,                     11},
@@ -32,14 +28,8 @@ static const R_CMethodDef CEntries[] = {
     {NULL, NULL, 0}
 };
 
-static const R_FortranMethodDef FortranEntries[] = {
-    {"halton", (DL_FUNC) &F77_NAME(halton),  7},
-    {"sobol",  (DL_FUNC) &F77_NAME(sobol),  11},
-    {NULL, NULL, 0}
-};
-
 void R_init_GLDEX(DllInfo *dll)
 {
-    R_registerRoutines(dll, CEntries, NULL, FortranEntries, NULL);
+    R_registerRoutines(dll, CEntries, NULL, NULL, NULL);
     R_useDynamicSymbols(dll, FALSE);
 }

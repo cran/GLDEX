@@ -41,11 +41,12 @@ Journal of Statistical Software: *21* 9. }
 \seealso{ \code{\link{fun.diag1}}, \code{\link{fun.diag.ks.g}}, 
 \code{\link{fun.diag.ks.g.bimodal}} }
 \examples{
-## Fits a Normal 3,2 distribution:
-# junk<-rnorm(1000,3,2)
-# fit<-fun.data.fit.ml(junk)
+\donttest{
+# Fits a Normal 3,2 distribution:
+ junk<-rnorm(1000,3,2)
+ fit<-fun.data.fit.ml(junk)
 
-## Compute the resample K-S test results.
-# fun.diag2(fit,junk)
-}
+# Compute the resample K-S test results.
+ fun.diag2(fit,junk)
+}}
 \keyword{htest}

@@ -2,7 +2,8 @@ useDynLib(GLDEX, .registration = TRUE,.fixes = "C_")
 
 exportPattern("^[^\\.]")
 
-import(cluster)
+import("cluster")
 import("grDevices")
 import("graphics")
 import("stats")
+import("spacefillr")

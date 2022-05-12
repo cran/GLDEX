@@ -16,10 +16,8 @@ no = 10000)
   \item{data}{ Dataset to be fitted }
   \item{rs.init}{ Initial values for RS distribution optimization, 
   \code{c(-1.5,1.5)} tends to work well. }
-  \item{leap}{ Scrambling (0,1,2,3) for the Sobol sequence for the distribution 
-  fit. See scrambling/leap argument for \code{\link{runif.sobol}}, 
-  \code{\link{runif.halton}} or \code{\link{QUnif}}. }
-  \item{FUN}{ A character string of either  \code{"runif.sobol"} (default), 
+  \item{leap}{ See scrambling argument in \code{\link{fun.gen.qrn}}. }
+  \item{FUN}{ A character string of either  \code{"runif.sobol"} (default), \code{"runif.sobol.owen"}, 
   \code{"runif.halton"} or \code{"QUnif"}. }
   \item{no}{ Number of initial random values to find the best initial values for 
   optimisation. }
@@ -50,7 +48,8 @@ Computational Statistics and Data Analysis 52(4): 1971-1983. }
 \code{\link{fun.data.fit.lm}}, \code{\link{fun.data.fit.qs}},  
 \code{\link{fun.data.fit.mm}} }
 \examples{
-## Fitting the normal distribution
-# fun.RPRS.lm(data=rnorm(1000,2,3),rs.init=c(-1.5,1.5),leap=3)
-}
+\donttest{
+# Fitting the normal distribution
+ fun.RPRS.lm(data=rnorm(1000,2,3),rs.init=c(-1.5,1.5),leap=3)
+}}
 \keyword{smooth} 

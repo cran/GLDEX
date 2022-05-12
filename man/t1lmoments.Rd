@@ -41,7 +41,7 @@ Journal of Royal Statistical Society B 52, 105-124.
 \examples{
 
 x<-rnorm(500)
-t1lmoments(x);
+t1lmoments(x)
 
 }
 \author{Juha Karvanen \email{juha.karvanen@ktl.fi}}

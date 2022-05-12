@@ -8,6 +8,7 @@ These functions are for maintainers only and it is not designed for the users of
 this package.
 }
 \author{ Steve Su }
+\value{ Numerical result for beta function }
 \note{ Please contact the author directly if you find a bug! }
 \keyword{internal}
 

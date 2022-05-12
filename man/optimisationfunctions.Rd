@@ -19,5 +19,6 @@ These functions are for maintainers only and it is not designed for the users of
 this package.
 }
 \author{ Steve Su }
+\value{ Optimisation value under different fitting schemes, not intended to be used by users of this package }
 \note{ Please contact the author directly if you find a bug! }
 \keyword{internal} 

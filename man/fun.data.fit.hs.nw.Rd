@@ -22,12 +22,8 @@ no.c.fmkl = 50,FUN="runif.sobol",no=10000)
   \item{fmkl.default}{ If yes, this function uses the default method 
   \code{\link{fun.nclass.e}} to calculate number of classes required for the 
   FMKL distribution fits. }
-  \item{rs.leap}{ Scrambling (0,1,2,3) for the Sobol sequence for the RS 
-  distribution fit. See scrambling/leap argument for \code{\link{runif.sobol}}, 
-  \code{\link{runif.halton}} or \code{\link{QUnif}}. }
-  \item{fmkl.leap}{ Scrambling (0,1,2,3) for the Sobol sequence for the FMKL 
-  distribution fit. See scrambling/leap argument for \code{\link{runif.sobol}}, 
-  \code{\link{runif.halton}} or \code{\link{QUnif}}. }
+  \item{rs.leap}{ See scrambling argument in \code{\link{fun.gen.qrn}}. }
+  \item{fmkl.leap}{ See scrambling argument in \code{\link{fun.gen.qrn}}. }
   \item{rs.init}{ Initial values for RS distribution optimization, 
   \code{c(-1.5,1.5)} tends to work well. }
   \item{fmkl.init}{ Initial values for FMKL distribution optimization, 
@@ -36,7 +32,7 @@ no.c.fmkl = 50,FUN="runif.sobol",no=10000)
   for the RS GLD. This argument is ineffective if \code{default="Y"}. }
   \item{no.c.fmkl}{ Number of classes or bins of histogram to be optimized over 
   for the FMKL GLD. This argument is ineffective if \code{default="Y"}. }
-  \item{FUN}{ A character string of either  \code{"runif.sobol"} (default), 
+  \item{FUN}{ A character string of either  \code{"runif.sobol"} (default), \code{"runif.sobol.owen"}, 
   \code{"runif.halton"} or \code{"QUnif"}. }
   \item{no}{ Number of initial random values to find the best initial values 
   for optimisation. }
@@ -72,8 +68,9 @@ set or if initial values do not give a valid distribution.
 \code{\link{fun.RMFMKL.hs.nw}}, \code{\link{fun.RPRS.hs.nw}}, 
 \code{\link{fun.data.fit.hs}}, \code{\link{fun.data.fit.ml}} }
 \examples{
-## Fitting normal(3,2) distriution using the default setting
-# junk<-rnorm(1000,3,2)
-# fun.data.fit.hs.nw(junk)
-}
+\donttest{
+# Fitting normal(3,2) distriution using the default setting
+ junk<-rnorm(1000,3,2)
+ fun.data.fit.hs.nw(junk)
+}}
 \keyword{smooth}

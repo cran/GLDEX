@@ -35,16 +35,16 @@ with respect to the dataset fitted.
 }
 \seealso{ \code{\link{fun.comp.moments.ml.2}} }
 \examples{
+\donttest{
+# Generate random normally distributed observations.
+ junk<-rnorm(1000,3,2)
 
-## Generate random normally distributed observations.
-# junk<-rnorm(1000,3,2)
+# Fit the dataset using fun.data.ml
+ fit<-fun.data.fit.ml(junk)
 
-## Fit the dataset using fun.data.ml
-# fit<-fun.data.fit.ml(junk)
-
-## Compare the resulting fits. It is usually the case the maximum likelihood 
-## provides better estimation of the moments than the starship method.
-# fun.comp.moments.ml(fit,junk)
-
+# Compare the resulting fits. It is usually the case the maximum likelihood 
+# provides better estimation of the moments than the starship method.
+ fun.comp.moments.ml(fit,junk)
+}
 }
 \keyword{univar}

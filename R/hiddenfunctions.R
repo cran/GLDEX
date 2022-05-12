@@ -87,12 +87,7 @@ function (p, lambdas)
     result
 }
 
-       
-.First<-function() { .setGLDEXEnv(.runif.halton.seed = list())
-    .setGLDEXEnv(.rnorm.halton.seed = list())
-    .setGLDEXEnv(.runif.sobol.seed = list())
-    .setGLDEXEnv(.rnorm.sobol.seed = list())}
-
+   
 .GLDEXEnv <- new.env(hash = TRUE)
 
 .setGLDEXEnv <-

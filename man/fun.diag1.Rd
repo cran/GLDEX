@@ -40,10 +40,12 @@ Journal of Statistical Software: *21* 9. }
 \seealso{ \code{\link{fun.diag2}}, \code{\link{fun.diag.ks.g}}, 
 \code{\link{fun.diag.ks.g.bimodal}} }
 \examples{
-## Fits a Weibull 5,2 distribution:
-# weibull.approx.ml<-fun.data.fit.ml(rweibull(1000,5,2))
+\donttest{
+# Fits a Weibull 5,2 distribution:
+ weibull.approx.ml<-fun.data.fit.ml(rweibull(1000,5,2))
 
-## Compute the resample K-S test results.
-# fun.diag1(weibull.approx.ml, rweibull(100000, 5, 2))
+# Compute the resample K-S test results.
+ fun.diag1(weibull.approx.ml, rweibull(100000, 5, 2))
+}
 }
 \keyword{htest}

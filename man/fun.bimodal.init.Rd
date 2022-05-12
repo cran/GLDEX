@@ -20,32 +20,22 @@ fun2="runif.sobol",no=10000)
 \arguments{
   \item{data1}{ The first data obtained by the clustering algorithm. }
   \item{data2}{ The second data obtained by the clustering algorithm. }
-  \item{rs.leap1}{ Scrambling (0,1,2,3) for the sobol sequence for the first RS 
-  distribution fit. See scrambling/leap argument for \code{\link{runif.sobol}}, 
-  \code{\link{runif.halton}} or \code{\link{QUnif}}. }
-  \item{fmkl.leap1}{ Scrambling (0,1,2,3) for the sobol sequence for the first 
-  FMKL distribution fit. See scrambling/leap argument for 
-  \code{\link{runif.sobol}}, \code{\link{runif.halton}} 
-  or \code{\link{QUnif}}. }
+  \item{rs.leap1}{ See scrambling argument in \code{\link{fun.gen.qrn}}. }
+  \item{fmkl.leap1}{ See scrambling argument in \code{\link{fun.gen.qrn}}. }
   \item{rs.init1}{ Inititial values (lambda3 and lambda4) for the first RS 
   generalised lambda distribution. \code{c(-1.5,1.5)} tends to work well. }
   \item{fmkl.init1}{ Inititial values (lambda3 and lambda4) for the first FMKL 
   generalised lambda distribution. \code{c(-0.25,1.5)} tends to work well }
-  \item{rs.leap2}{ Scrambling (0,1,2,3) for the sobol sequence for the second RS 
-  distribution fit. See scrambling/leap argument for \code{\link{runif.sobol}}, 
-  \code{\link{runif.halton}} or \code{\link{QUnif}}. }
-  \item{fmkl.leap2}{ Scrambling (0,1,2,3) for the sobol sequence for the second 
-  FMKL distribution fit. See scrambling/leap argument for 
-  \code{\link{runif.sobol}}, \code{\link{runif.halton}} or 
-  \code{\link{QUnif}}. }
+  \item{rs.leap2}{ See scrambling argument in \code{\link{fun.gen.qrn}}. }
+  \item{fmkl.leap2}{ See scrambling argument in \code{\link{fun.gen.qrn}}.  }
   \item{rs.init2}{ Inititial values (lambda3 and lambda4) for the second RS 
   generalised lambda distribution. \code{c(-1.5,1.5)} tends to work well. }
   \item{fmkl.init2}{ Inititial values (lambda3 and lambda4) for the second FMKL 
   generalised lambda distribution. \code{c(-0.25,1.5)} tends to work well }
-  \item{fun1}{ A character string of either  \code{"runif.sobol"} (default), 
-  \code{"runif.halton"} or \code{"QUnif"} for the first distribution fit. }
-  \item{fun2}{ A character string of either  \code{"runif.sobol"} (default), 
-  \code{"runif.halton"} or \code{"QUnif"} for the second distribution fit. }
+  \item{fun1}{ A character string of either  \code{"runif.sobol"} (default), \code{"runif.sobol.owen"}, 
+  \code{"runif.halton"} or \code{"QUnif"}.}
+  \item{fun2}{ A character string of either  \code{"runif.sobol"} (default), \code{"runif.sobol.owen"}, 
+  \code{"runif.halton"} or \code{"QUnif"}. }
   \item{no}{ Number of initial random values to find the best initial values 
   for optimisation. }
 }
@@ -73,21 +63,24 @@ noted by the users.
 \seealso{ \code{\link{fun.class.regime.bi}},\code{\link{fun.bimodal.fit.pml}},
 \code{\link{fun.bimodal.fit.ml}} }
 \examples{
-## Split the first column of the faithful data into two using 
-## fun.class.regime.bi
-# faithful1.mod<-fun.class.regime.bi(faithful[,1], 0.1, clara)
+\donttest{
+ # Split the first column of the faithful data into two using 
 
-## Save the datasets
-# qqqq1.faithful1.cc1<-faithful1.mod$data.a
-# qqqq2.faithful1.cc1<-faithful1.mod$data.b
+ fun.class.regime.bi
+ faithful1.mod<-fun.class.regime.bi(faithful[,1], 0.1, clara)
 
-## Find the initial values for secondary optimisation.
-# result.faithful1.init1<-fun.bimodal.init(data1=qqqq1.faithful1.cc1,
-# data2=qqqq2.faithful1.cc1, rs.leap1=3,fmkl.leap1=3,rs.init1 = c(-1.5, 1.5), 
-# fmkl.init1 = c(-0.25, 1.5), rs.leap2=3,fmkl.leap2=3,rs.init2 = c(-1.5, 1.5), 
-# fmkl.init2 = c(-0.25, 1.5))
+ # Save the datasets
+ qqqq1.faithful1.cc1<-faithful1.mod$data.a
+ qqqq2.faithful1.cc1<-faithful1.mod$data.b
 
-## These initial values are then passed onto fun,bimodal.fit.ml to obtain the 
-## final fits.
-}
+ # Find the initial values for secondary optimisation.
+ 
+ result.faithful1.init1<-fun.bimodal.init(data1=qqqq1.faithful1.cc1,
+ data2=qqqq2.faithful1.cc1, rs.leap1=3,fmkl.leap1=3,rs.init1 = c(-1.5, 1.5), 
+ fmkl.init1 = c(-0.25, 1.5), rs.leap2=3,fmkl.leap2=3,rs.init2 = c(-1.5, 1.5), 
+ fmkl.init2 = c(-0.25, 1.5))
+
+ # These initial values are then passed onto fun,bimodal.fit.ml to obtain the 
+ # final fits.
+}}
 \keyword{smooth}

@@ -63,28 +63,30 @@ R. Journal of Statistical Software: *21* 9. }
 \note{ There is currently no guarantee of a global convergence. }
 \seealso{ \code{link{fun.bimodal.fit.pml}}, \code{\link{fun.bimodal.init}} }
 \examples{
-## Extract faithful[,2] into faithful2
-# faithful2<-faithful[,2]
+\donttest{
+ # Extract faithful[,2] into faithful2
+ faithful2<-faithful[,2]
 
-## Uses clara clustering method
-# clara.faithful2<-fun.class.regime.bi(faithful2, 0.01, clara)
+ # Uses clara clustering method
+ clara.faithful2<-fun.class.regime.bi(faithful2, 0.01, clara)
 
-## Save into two different objects
-# qqqq1.faithful2.cc<-clara.faithful2$data.a
-# qqqq2.faithful2.cc<-clara.faithful2$data.b
+ # Save into two different objects
+ qqqq1.faithful2.cc<-clara.faithful2$data.a
+ qqqq2.faithful2.cc<-clara.faithful2$data.b
 
-## Find the initial values
-# result.faithful2.init<-fun.bimodal.init(data1=qqqq1.faithful2.cc,
-# data2=qqqq2.faithful2.cc, rs.leap1=3,fmkl.leap1=3,rs.init1 = c(-1.5, 1.5), 
-# fmkl.init1 = c(-0.25, 1.5), rs.leap2=3,fmkl.leap2=3,rs.init2 = c(-1.5, 1.5), 
-# fmkl.init2 = c(-0.25, 1.5))
+ # Find the initial values
+ result.faithful2.init<-fun.bimodal.init(data1=qqqq1.faithful2.cc,
+ data2=qqqq2.faithful2.cc, rs.leap1=3,fmkl.leap1=3,rs.init1 = c(-1.5, 1.5), 
+ fmkl.init1 = c(-0.25, 1.5), rs.leap2=3,fmkl.leap2=3,rs.init2 = c(-1.5, 1.5), 
+ fmkl.init2 = c(-0.25, 1.5))
 
-## Find the final fits
-# result.faithful2.rsrs<-fun.bimodal.fit.ml(data=faithful2,
-# result.faithful2.init[[2]],result.faithful2.init[[3]],
-# result.faithful2.init[[1]], param1="rs",param2="rs",selc1="rs",selc2="rs")
+ # Find the final fits
+ result.faithful2.rsrs<-fun.bimodal.fit.ml(data=faithful2,
+ result.faithful2.init[[2]],result.faithful2.init[[3]],
+ result.faithful2.init[[1]], param1="rs",param2="rs",selc1="rs",selc2="rs")
 
-## Output
-# result.faithful2.rsrs
+ # Output
+ result.faithful2.rsrs
+}
 }
 \keyword{smooth}

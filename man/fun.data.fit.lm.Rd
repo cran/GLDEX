@@ -13,17 +13,13 @@ fmkl.init = c(-0.25, 1.5), FUN = "runif.sobol", no = 10000)
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{data}{ Dataset to be fitted. }
-  \item{rs.leap}{ Scrambling (0,1,2,3) for the sobol sequence for the RPRS 
-  distribution fit. See scrambling/leap argument for \code{\link{runif.sobol}}, 
-  \code{\link{runif.halton}} or \code{\link{QUnif}}. }
-  \item{fmkl.leap}{ Scrambling (0,1,2,3) for the sobol sequence for the RMFMKL 
-  distribution fit. See scrambling/leap argument for \code{\link{runif.sobol}}, 
-  \code{\link{runif.halton}} or \code{\link{QUnif}}. }
+  \item{rs.leap}{ See scrambling argument in \code{\link{fun.gen.qrn}}. }
+  \item{fmkl.leap}{ See scrambling argument in \code{\link{fun.gen.qrn}}. }
   \item{rs.init}{ Inititial values (lambda3 and lambda4) for the RS generalised 
   lambda distribution. }
   \item{fmkl.init}{ Inititial values (lambda3 and lambda4) for the FMKL 
   generalised lambda distribution. }
-  \item{FUN}{ A character string of either  \code{"runif.sobol"} (default), 
+  \item{FUN}{ A character string of either  \code{"runif.sobol"} (default), \code{"runif.sobol.owen"}, 
   \code{"runif.halton"} or \code{"QUnif"}. }
   \item{no}{ Number of initial random values to find the best initial values for 
   optimisation. }
@@ -50,7 +46,8 @@ Computational Statistics and Data Analysis 52(4): 1971-1983. }
 \code{\link{fun.data.fit.hs.nw}} , \code{\link{fun.data.fit.qs}}, 
 \code{\link{fun.data.fit.mm}} }
 \examples{
-## Fitting normal(3,2) distriution using the default setting
-# junk<-rnorm(50,3,2)
-# fun.data.fit.lm(junk)
-}
+\donttest{
+# Fitting normal(3,2) distriution using the default setting
+ junk<-rnorm(50,3,2)
+ fun.data.fit.lm(junk)
+}}

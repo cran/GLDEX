@@ -31,16 +31,12 @@ fun1="runif.sobol", fun2="runif.sobol",no=10000,max.it=5000, optim.further="Y")
   lambda distribution. }
   \item{init2}{ Inititial values lambda3 and lambda4 for the second generalised 
   lambda distribution. }
-  \item{leap1}{ Scrambling (0,1,2,3) for the sobol sequence for the first 
-  distribution fit. See scrambling/leap argument for \code{\link{runif.sobol}}, 
-  \code{\link{runif.halton}} or \code{\link{QUnif}}. }
-  \item{leap2}{ Scrambling (0,1,2,3) for the sobol sequence for the second 
-  distribution fit. See scrambling/leap argument for \code{\link{runif.sobol}}, 
-  \code{\link{runif.halton}} or \code{\link{QUnif}}. }
-  \item{fun1}{ A character string of either  \code{"runif.sobol"} (default), 
-  \code{"runif.halton"} or \code{"QUnif"} for the first distribution fit. }
-  \item{fun2}{ A character string of either  \code{"runif.sobol"} (default), 
-  \code{"runif.halton"} or \code{"QUnif"} for the second distribution fit. }
+  \item{leap1}{ See scrambling argument in \code{\link{fun.gen.qrn}}. }
+  \item{fun1}{ A character string of either  \code{"runif.sobol"} (default), \code{"runif.sobol.owen"}, 
+  \code{"runif.halton"} or \code{"QUnif"}. }
+  \item{leap2}{ See scrambling argument in \code{\link{fun.gen.qrn}}. }
+  \item{fun2}{ A character string of either  \code{"runif.sobol"} (default), \code{"runif.sobol.owen"}, 
+  \code{"runif.halton"} or \code{"QUnif"}. }
   \item{no}{ Number of initial random values to find the best initial values for 
   optimisation. }   
   \item{max.it}{ Maximum number of iterations for numerical optimisation. }
@@ -100,10 +96,12 @@ values.
 \seealso{ \code{\link{fun.auto.bimodal.ml}},\code{\link{fun.plot.fit.bm}},
 \code{\link{fun.diag.ks.g.bimodal}} }
 \examples{
-## Fitting faithful data from the dataset library, with the clara clustering 
-## regime. The first distribution is RS and the second distribution is fmkl. 
+\donttest{
+# Fitting faithful data from the dataset library, with the clara clustering 
+# regime. The first distribution is RS and the second distribution is fmkl. 
 
-# fun.auto.bimodal.pml(faithful[,1],clustering.m=clara,init1.sel="rprs",
-# init2.sel="rmfmkl",init1=c(-1.5,1,5),init2=c(-0.25,1.5),leap1=3,leap2=3)
-}
+fun.auto.bimodal.pml(faithful[,1],clustering.m=clara,init1.sel="rprs",
+init2.sel="rmfmkl",init1=c(-1.5,1,5),init2=c(-0.25,1.5),leap1=3,leap2=3)
+
+}}
 \keyword{smooth}

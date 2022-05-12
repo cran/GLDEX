@@ -34,15 +34,15 @@ fun.comp.moments.ml.2(theo.obj, data, name = "ML")
 }
 \seealso{ \code{\link{fun.comp.moments.ml}} }
 \examples{
-
+\donttest{
 ## Generate random normally distributed observations.
-# junk<-rnorm(1000,3,2)
+ junk<-rnorm(1000,3,2)
 
 ## Fit the dataset using fun.data.ml
-# fit<-cbind(fun.RMFMKL.ml(junk),starship(junk)$lambda)
+ fit<-cbind(fun.RMFMKL.ml(junk),starship(junk)$lambda)
 
 ## Compare the resulting fits. It is usually the case the maximum likelihood 
 ## provides better estimation of the moments than the starship method.
-# fun.comp.moments.ml.2(fit,junk)
-}
+ fun.comp.moments.ml.2(fit,junk)
+}}
 \keyword{univar}

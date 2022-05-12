@@ -21,10 +21,8 @@ no.c.fmkl = 50, leap = 3,FUN="runif.sobol",no=10000)
   \code{c(-0.25,1.5)} tends to work well. }
   \item{no.c.fmkl}{ Number of classes or bins of histogram to be optimized over. 
   This argument is ineffective if \code{default="Y"}. }
-  \item{leap}{ Scrambling (0,1,2,3) for the Sobol sequence for the distribution 
-  fit. See scrambling/leap argument for \code{\link{runif.sobol}}, 
-  \code{\link{runif.halton}} or \code{\link{QUnif}}. }
-  \item{FUN}{ A character string of either  \code{"runif.sobol"} (default), 
+  \item{leap}{ See scrambling argument in \code{\link{fun.gen.qrn}}. }
+  \item{FUN}{ A character string of either  \code{"runif.sobol"} (default), \code{"runif.sobol.owen"}, 
   \code{"runif.halton"} or \code{"QUnif"}. }
   \item{no}{ Number of initial random values to find the best initial values for 
   optimisation. }
@@ -60,12 +58,15 @@ checking mechanism in place to ensure global convergence.
 \seealso{ \code{\link{fun.RPRS.hs.nw}}, \code{\link{fun.RMFMKL.hs}}, 
 \code{\link{fun.RPRS.hs}}, \code{\link{fun.data.fit.hs}}, 
 \code{\link{fun.data.fit.hs.nw}} }
+
 \examples{
-## Using the default number of classes
-# fun.RMFMKL.hs.nw(data=rnorm(1000,3,2),default="Y",
-# fmkl.init=c(-0.25,1.5),leap=3)
-## Using 20 classes
-# fun.RMFMKL.hs.nw(data=rnorm(1000,6,5),default="N",fmkl.init=c(-0.25,1.5),
-# no.c.fmkl=20,leap=3)
+\donttest{
+# Using the default number of classes
+ fun.RMFMKL.hs.nw(data=rnorm(1000,3,2),default="Y",
+ fmkl.init=c(-0.25,1.5),leap=3)
+# Using 20 classes
+ fun.RMFMKL.hs.nw(data=rnorm(1000,6,5),default="N",fmkl.init=c(-0.25,1.5),
+ no.c.fmkl=20,leap=3)
+}
 }
 \keyword{smooth}

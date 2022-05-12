@@ -16,10 +16,8 @@ trial.n = 100, len = 1000, type = 7, no = 10000)
   \item{data}{ Dataset to be fitted }
   \item{fmkl.init}{ Initial values for FMKL distribution optimization, 
   \code{c(-0.25,1.5)} tends to work well. }
-  \item{leap}{ Scrambling (0,1,2,3) for the Sobol sequence for the distribution 
-  fit. See scrambling/leap argument for \code{\link{runif.sobol}}, 
-  \code{\link{runif.halton}} or \code{\link{QUnif}}. }
-  \item{FUN}{ A character string of either  \code{"runif.sobol"} (default), 
+  \item{leap}{ See scrambling argument in \code{\link{fun.gen.qrn}}. }
+  \item{FUN}{ A character string of either  \code{"runif.sobol"} (default), \code{"runif.sobol.owen"}, 
   \code{"runif.halton"} or \code{"QUnif"}. }
   \item{trial.n}{ Number of evenly spaced quantile ranging from 0 to 1 to be
   used in the checking phase, to find the best set of initial values for 
@@ -50,7 +48,8 @@ appear) }
 \code{\link{fun.data.fit.lm}}, \code{\link{fun.data.fit.qs}},  
 \code{\link{fun.data.fit.mm}} }
 \examples{
-## Fitting the normal distribution
-# fun.RMFMKL.qs(data=rnorm(1000,2,3),fmkl.init=c(-0.25,1.5),leap=3)
-}
+\donttest{
+# Fitting the normal distribution
+ fun.RMFMKL.qs(data=rnorm(1000,2,3),fmkl.init=c(-0.25,1.5),leap=3)
+}}
 \keyword{smooth} 
