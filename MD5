@@ -1,4 +1,4 @@
-9fc68adc5bfd5c27f875443167c76763 *DESCRIPTION
+ba2d07ef098d13c1b5307484a11268ed *DESCRIPTION
 32eac3d56ae4df1866e08650e38821e4 *NAMESPACE
 fe887e74c8390e48cfa3000300fff07c *R/Lmoments.R
 c2782abca21451e0c40444b300db224a *R/Lmoments_calc.R
@@ -129,7 +129,7 @@ b298503ddbee43d26157c1ab439ff088 *R/t1lmoments.R
 664ddf135dca2bccf729801d0b61fb9c *R/which.na.R
 23161c7eb305fec411df18388de0d35c *README
 1b6a82d4bb1757296242631cdade9424 *man/FMKLfittingandbasicfunctions.Rd
-6b1f1a841efa004a7448f34c1a734841 *man/GLDEX.package.Rd
+eeb04302354f145422870804fe34f70c *man/GLDEX.package.Rd
 36a6675bc3715198834a8298371ed276 *man/GLDfunctions.Rd
 27b2150dd13bd2fd7f9be454d7c183f1 *man/Lmoments.Rd
 ef673486fcaa278af60c4a17cfa532a9 *man/QUnif.Rd
@@ -206,5 +206,5 @@ c6f78a423cfd66ba09b824f53a6468c9 *man/optimisationfunctions.Rd
 6050da4de77b470630de1f32fd06cc87 *man/starship.obj.Rd
 de6656eb35fba28709733b347f56723d *man/t1lmoments.Rd
 0640361ca908854308dd00cc2461ccc4 *man/which.na.Rd
-961b50731c164495ad8e2c061d24e0b8 *src/GLDEX.c
+fab397ea8eb24cc9c6509bb53837f00e *src/GLDEX.c
 18b040452d006265570ecf12e0df73b0 *src/GLDEX_init.c

@@ -215,30 +215,30 @@ for(i=0; i<*n; i++){
 if (fabs(c[i])>*tol && fabs(d[i])>*tol){
 
 if ((*lessequalmin==1) && (*greaterequalmax==1)){
-out[i]=((a[i] + ((pow(0,c[i]) - 1)/(c[i]) - 
+out[i]= (int) ((a[i] + ((pow(0,c[i]) - 1)/(c[i]) - 
 (pow(1,d[i]) - 1)/(d[i]))/(b[i]))<=*mindata) &
-((a[i] + ((pow(1,c[i]) - 1)/(c[i]) - 
+(int) ((a[i] + ((pow(1,c[i]) - 1)/(c[i]) - 
 (pow(0,d[i]) - 1)/(d[i]))/(b[i]))>=*maxdata);
 }
 
 if ((*lessequalmin==1) && (*greaterequalmax==0)){
-out[i]=((a[i] + ((pow(0,c[i]) - 1)/(c[i]) - 
+out[i]= (int) ((a[i] + ((pow(0,c[i]) - 1)/(c[i]) - 
 (pow(1,d[i]) - 1)/(d[i]))/(b[i]))<=*mindata) &
-((a[i] + ((pow(1,c[i]) - 1)/(c[i]) - 
+(int) ((a[i] + ((pow(1,c[i]) - 1)/(c[i]) - 
 (pow(0,d[i]) - 1)/(d[i]))/(b[i]))>*maxdata);
 }
 
 if ((*lessequalmin==0) && (*greaterequalmax==1)){
-out[i]=((a[i] + ((pow(0,c[i]) - 1)/(c[i]) - 
+out[i]= (int) ((a[i] + ((pow(0,c[i]) - 1)/(c[i]) - 
 (pow(1,d[i]) - 1)/(d[i]))/(b[i]))<*mindata) &
-((a[i] + ((pow(1,c[i]) - 1)/(c[i]) - 
+(int) ((a[i] + ((pow(1,c[i]) - 1)/(c[i]) - 
 (pow(0,d[i]) - 1)/(d[i]))/(b[i]))>=*maxdata);
 }
 
 if ((*lessequalmin==0) && (*greaterequalmax==0)){
-out[i]=((a[i] + ((pow(0,c[i]) - 1)/(c[i]) - 
+out[i]= (int) ((a[i] + ((pow(0,c[i]) - 1)/(c[i]) - 
 (pow(1,d[i]) - 1)/(d[i]))/(b[i]))<*mindata) &
-((a[i] + ((pow(1,c[i]) - 1)/(c[i]) - 
+(int) ((a[i] + ((pow(1,c[i]) - 1)/(c[i]) - 
 (pow(0,d[i]) - 1)/(d[i]))/(b[i]))>*maxdata);
 }}
 
@@ -280,24 +280,24 @@ int i;
 for(i=0; i<*n; i++){
 
 if ((*lessequalmin==1) && (*greaterequalmax==1)){
-out[i]=((a[i] + (pow(0,c[i]) - 1)/(b[i])) <=*mindata) &
-((a[i] + (1 - pow(0,d[i]))/(b[i]))>=*maxdata);
+out[i]= (int) ((a[i] + (pow(0,c[i]) - 1)/(b[i])) <=*mindata) &
+(int) ((a[i] + (1 - pow(0,d[i]))/(b[i]))>=*maxdata);
 }
 
 if ((*lessequalmin==1) && (*greaterequalmax==0)){
-out[i]=((a[i] + (pow(0,c[i]) - 1)/(b[i])) <=*mindata) &
-((a[i] + (1 - pow(0,d[i]))/(b[i]))>*maxdata);
+out[i]= (int) ((a[i] + (pow(0,c[i]) - 1)/(b[i])) <=*mindata) &
+ (int) ((a[i] + (1 - pow(0,d[i]))/(b[i]))>*maxdata);
 }
 
 if ((*lessequalmin==0) && (*greaterequalmax==1)){
-out[i]=((a[i] + (pow(0,c[i]) - 1)/(b[i])) <*mindata) &
-((a[i] + (1 - pow(0,d[i]))/(b[i]))>=*maxdata);
+out[i]= (int) ((a[i] + (pow(0,c[i]) - 1)/(b[i])) <*mindata) &
+(int) ((a[i] + (1 - pow(0,d[i]))/(b[i]))>=*maxdata);
 }
 
 
 if ((*lessequalmin==0) && (*greaterequalmax==0)){
-out[i]=((a[i] + (pow(0,c[i]) - 1)/(b[i])) <*mindata) &
-((a[i] + (1 - pow(0,d[i]))/(b[i]))>*maxdata);
+out[i]= (int) ((a[i] + (pow(0,c[i]) - 1)/(b[i])) <*mindata) &
+(int) ((a[i] + (1 - pow(0,d[i]))/(b[i]))>*maxdata);
 }}
 
 
