@@ -6,7 +6,7 @@ result<-generate_sobol_set(n = n, dim = dimension,seed=scrambling)
 }
 
 if(FUN == "runif.halton"){
-result<-generate_halton_faure_set(n = n+1, dim = dimension)[-1]
+result<-generate_halton_faure_set(n = n+1, dim = dimension)[-1,]
 }
 
 if(FUN == "runif.sobol.owen"){

@@ -58,7 +58,7 @@ and \eqn{\lambda_2}{lambda 2} by the absolute value of their starting points.
 }
 }
 \details{
-The starship method is described in King \& MacGillivray, 1999 (see
+The starship method is described in King and MacGillivray, 1999 (see
 references). It is built on the fact that the 
 generalised lambda distribution 
 is a transformation of the uniform distribution.  Thus the inverse of this
@@ -120,7 +120,7 @@ Computation and Simulation \bold{17}, 315--323.
 \examples{
 \donttest{
  data <- rgl(100,0,1,.2,.2)
- vstarship(data,optim.method="Nelder-Mead",initgrid=list(lcvect=(0:4)/10,
+ starship(data,optim.method="Nelder-Mead",initgrid=list(lcvect=(0:4)/10,
  ldvect=(0:4)/10))
 }}
 \keyword{distribution}

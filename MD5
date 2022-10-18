@@ -1,4 +1,4 @@
-ba2d07ef098d13c1b5307484a11268ed *DESCRIPTION
+99bc6a15c286930044511710d7bac17c *DESCRIPTION
 32eac3d56ae4df1866e08650e38821e4 *NAMESPACE
 fe887e74c8390e48cfa3000300fff07c *R/Lmoments.R
 c2782abca21451e0c40444b300db224a *R/Lmoments_calc.R
@@ -70,7 +70,7 @@ ac7aa26e65c3503cbfb043b8ddc01339 *R/fun.fmkl.mm.sol.R
 f1c78be02730a68cd7a7369c41330c1d *R/fun.fmkl0.R
 1e998bfe6db4510d0b91a8cbd7814ff3 *R/fun.fmkla.R
 6c7000a3bd4d533ab8def6dbb4ce8e69 *R/fun.fmklb.R
-acc359d4000fb4043aa3ae15280c974d *R/fun.gen.qrn.R
+7c5d15bb2c41f4672b17d75c2785f42d *R/fun.gen.qrn.R
 95fd675b1914b672d9b7d2beadc45be4 *R/fun.lambda.percentile.R
 ae1e264a9e251f33fcae51826027ba98 *R/fun.lm.theo.gld.R
 6cd1eddb3f6cc459a0a189ec03975771 *R/fun.mApply.R
@@ -201,10 +201,10 @@ c6f78a423cfd66ba09b824f53a6468c9 *man/optimisationfunctions.Rd
 5318f64442e3ce5259b99567931e3aaf *man/qqplot.gld.Rd
 7fbb5ad9d701e286a7321db305c10864 *man/qqplot.gld.bi.Rd
 3c302ed41b6af2577afc99e30669881e *man/skewnessandkurtosis.Rd
-7e0abb09672a0a094b3e204fe13080da *man/starship.Rd
-36d7530b70447e2005aed5801d83001a *man/starship.adaptivegrid.Rd
-6050da4de77b470630de1f32fd06cc87 *man/starship.obj.Rd
+59caab591471d58dec88bcfa0eb6c169 *man/starship.Rd
+420344183ebdf723736befa06fdb5d71 *man/starship.adaptivegrid.Rd
+5fd6c78fc12bdbd6f7a56a12504310aa *man/starship.obj.Rd
 de6656eb35fba28709733b347f56723d *man/t1lmoments.Rd
 0640361ca908854308dd00cc2461ccc4 *man/which.na.Rd
-fab397ea8eb24cc9c6509bb53837f00e *src/GLDEX.c
+6b22f824c80a3992f39a15f63af89734 *src/GLDEX.c
 18b040452d006265570ecf12e0df73b0 *src/GLDEX_init.c

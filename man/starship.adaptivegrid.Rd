@@ -36,7 +36,7 @@ levect = c(-0.5,-0.25,0,0.25,0.5)),param="FMKL")
   (paper to appear)}
 }
 \details{
-The starship method is described in King \& MacGillivray, 1999 (see
+The starship method is described in King and MacGillivray, 1999 (see
 references). It is built on the fact that the 
 generalised lambda distribution 
 is a transformation of the uniform distribution.  Thus the inverse of this
@@ -51,7 +51,7 @@ goodness-of-fit test on the transformed data against the uniform, for a
 sample of size \code{length(data)}.
 
 This function carries out a grid-based search.  This was the original method
-of King \& MacGillivray, 1999, but you are advised to instead use 
+of King and MacGillivray, 1999, but you are advised to instead use 
 \code{\link{starship}} which uses a grid-based search together with an
 optimisation based search.
 
@@ -61,7 +61,7 @@ See references for details on
 \value{
   \item{response}{The minimum ``response value'' --- the result of the
 internal goodness-of-fit measure.  This is the return value of starship.obj.
-See King \& MacGillivray, 1999 for more details}
+See King and MacGillivray, 1999 for more details}
   \item{lambda}{A vector of length 4 giving the values of
 \eqn{\lambda_1}{lambda 1} to \eqn{\lambda_4}{lambda 4} that produce this
 minimum response, i.e. the estimates}
