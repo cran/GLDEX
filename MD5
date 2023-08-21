@@ -1,4 +1,4 @@
-d2ea91ccd1ddb2482257a51618108951 *DESCRIPTION
+45c15c9fe87d5a99ebcf58b08e481cd0 *DESCRIPTION
 32eac3d56ae4df1866e08650e38821e4 *NAMESPACE
 fe887e74c8390e48cfa3000300fff07c *R/Lmoments.R
 c2782abca21451e0c40444b300db224a *R/Lmoments_calc.R
@@ -129,7 +129,7 @@ b298503ddbee43d26157c1ab439ff088 *R/t1lmoments.R
 664ddf135dca2bccf729801d0b61fb9c *R/which.na.R
 23161c7eb305fec411df18388de0d35c *README
 1b6a82d4bb1757296242631cdade9424 *man/FMKLfittingandbasicfunctions.Rd
-eeb04302354f145422870804fe34f70c *man/GLDEX.package.Rd
+1896694c204210f401ce71ecc03c0d1a *man/GLDEX.package.Rd
 36a6675bc3715198834a8298371ed276 *man/GLDfunctions.Rd
 27b2150dd13bd2fd7f9be454d7c183f1 *man/Lmoments.Rd
 ef673486fcaa278af60c4a17cfa532a9 *man/QUnif.Rd

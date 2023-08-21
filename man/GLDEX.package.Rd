@@ -41,13 +41,6 @@ Lmoments and t1lmoments written by Juha Karvanen distributed under GPL.
 
 }
 \details{
-\tabular{ll}{
-Package: \tab GLDEX\cr
-Type: \tab Package\cr
-Version: \tab 2.0.0.9\cr
-Date: \tab 2022-05-14\cr
-License: \tab GPL (>= 3.0)\cr
-}
 This package allows a direct fitting method onto the data set using 
 \code{\link{fun.RMFMKL.ml}}, \code{\link{fun.RMFMKL.ml.m}}, \code{\link{fun.RMFMKL.hs}}, 
 \code{\link{fun.RMFMKL.hs.nw}}, \code{\link{fun.RPRS.ml}}, \code{\link{fun.RPRS.ml.m}},
