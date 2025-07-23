@@ -1,4 +1,4 @@
-45c15c9fe87d5a99ebcf58b08e481cd0 *DESCRIPTION
+4b33c023f3fa0fecdb1c8733de159583 *DESCRIPTION
 32eac3d56ae4df1866e08650e38821e4 *NAMESPACE
 fe887e74c8390e48cfa3000300fff07c *R/Lmoments.R
 c2782abca21451e0c40444b300db224a *R/Lmoments_calc.R
@@ -159,7 +159,7 @@ f735710167979a7a7152a86dd5fcf75d *man/fun.beta.Rd
 17e9858e2e2f3a5ed7f6975b459564c0 *man/fun.bimodal.init.Rd
 813a204100f5a5e44c3466a1ee4d3d11 *man/fun.check.gld.Rd
 1c1193c2b4a8aac68952b3028ce13e3e *man/fun.check.gld.multi.Rd
-f99b1d0c8dd48a6f02af8cb20dee115e *man/fun.class.regime.bi.Rd
+96720b12a33b68c1d9965397cba8d348 *man/fun.class.regime.bi.Rd
 b1efc619ad96420fb7fde906faabdeee *man/fun.comp.moments.ml.2.Rd
 a9a8452b8efe1fc93c902377ed010b2e *man/fun.comp.moments.ml.Rd
 05e7b935b17567d168deeaa411d1e84d *man/fun.data.fit.hs.Rd

@@ -14,8 +14,8 @@ fun.class.regime.bi(data, perc.cross, fun.cross)
   \item{data}{ Data to be classified into two groups. }
   \item{perc.cross}{ Percentage of cross over from one data to the other, 
   usually set at 1\% }
-  \item{fun.cross}{ Any clustering function such as \code{link{clara}}, 
-  \code{\link{pam}}, \code{\link{fanny}} can be used here. Or a logical 
+  \item{fun.cross}{ Any clustering function such as \code{link[cluster]{clara}}, 
+  \code{\link[cluster]{pam}}, \code{\link[cluster]{fanny}} can be used here. Or a logical 
   vector indicating how data should be split. }
 }
 \details{
@@ -44,7 +44,7 @@ Maximum Log Likelihood Estimation for Mixtures of Generalized Lambda
 Distributions. Working Paper. }
 \author{ Steve Su }
 
-\seealso{ \code{link{clara}}, \code{\link{pam}}, \code{\link{fanny}} }
+\seealso{ \code{link[cluster]{clara}}, \code{\link[cluster]{pam}}, \code{\link[cluster]{fanny}} }
 \examples{
 \donttest{
 # Classify the faithful[,1] data into two categories with 10\% cross over mix.
